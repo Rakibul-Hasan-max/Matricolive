@@ -1,11 +1,20 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './Pages/About';
+import Home from './Pages/Home';
+import PageNotFound from './Pages/PageNotFound';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1> Matricolive </h1>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
