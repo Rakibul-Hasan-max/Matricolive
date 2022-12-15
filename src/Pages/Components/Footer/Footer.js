@@ -22,26 +22,31 @@ const Footer = () => {
           <Grid container spacing={5}>
             <Grid item xs={12} md={3}>
               <Box>
-                <img
-                  style={{ width: "162.5px", height: "auto" }}
-                  src={logo}
-                  alt=""
-                />
-                <Box sx={{ my: 2 }}>
-                  <Typography variant="subtitle2" sx={{ color: "#fff", my: 1 }}>
+                <Box sx={{ marginLeft: -10 }}>
+                  <img
+                    style={{ width: "162.5px", height: "auto" }}
+                    src={logo}
+                    alt=""
+                  />
+                </Box>
+                <Box>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ color: "#fff", textAlign: "left" }}
+                  >
                     Make your life easier with us
                   </Typography>
-                  <Box sx={{ display: "flex", mt: 2, color: "#fff" }}>
-                    <Box className="footer-icon">
+                  <Box sx={{ display: "flex", mt: 5, color: "#fff" }}>
+                    <Box className="footer-icon" sx={{marginRight: 1, border: "1px solid gray", padding: "3px 5px"}}>
                       <FaFacebookF />
                     </Box>
-                    <Box className="footer-icon">
+                    <Box className="footer-icon" sx={{marginRight: 1, border: "1px solid gray", padding: "3px 5px"}}>
                       <FaInstagram />
                     </Box>
-                    <Box className="footer-icon">
+                    <Box className="footer-icon" sx={{marginRight: 1, border: "1px solid gray", padding: "3px 5px"}}>
                       <FaTwitter />
                     </Box>
-                    <Box className="footer-icon">
+                    <Box className="footer-icon" sx={{marginRight: 1, border: "1px solid gray", padding: "3px 5px"}}>
                       <FaYoutube />
                     </Box>
                   </Box>
@@ -49,10 +54,10 @@ const Footer = () => {
               </Box>
             </Grid>
             <Grid item xs={12} md={5} sx={{ color: "#fff" }}>
-              <Typography variant="h6" sx={{ fontSize: 25 }}>
+              <Typography variant="h6" sx={{ fontSize: 25, textAlign: "left" }}>
                 About Us
               </Typography>
-              <Typography variant="body2" sx={{ my: 3 }}>
+              <Typography variant="body2" sx={{ my: 3, textAlign: "left", fontSize: 12 }}>
                 Here we are ready to provide you with the best quality product
                 from our own production. If you need any product, feel free to
                 inbox us with the product code and place your order.
@@ -63,8 +68,9 @@ const Footer = () => {
                   sx={{
                     background: "#f42828 !important",
                     borderRadius: "0 !important",
-                    py: 2,
-                    px: 5,
+                    py: 1,
+                    px: 3,
+                    ml: -33,
                   }}
                 >
                   More About Us
@@ -74,7 +80,7 @@ const Footer = () => {
             <Grid item xs={12} md={4} sx={{ color: "#fff" }}>
               <Grid container spacing={3}>
                 <Grid item xs={12} sm={6}>
-                  <Box>
+                  <Box sx={{ textAlign: "left" }}>
                     <Typography variant="h6" sx={{ fontSize: 25 }}>
                       Careers
                     </Typography>
@@ -104,7 +110,7 @@ const Footer = () => {
                   </Box>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <Box>
+                  <Box sx={{ textAlign: "left" }}>
                     <Typography variant="h6" sx={{ fontSize: 25 }}>
                       Our Service
                     </Typography>
@@ -132,7 +138,8 @@ const Footer = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Box sx={{ textAlign: "left" }}>
+          <Box sx={{ textAlign: "left", mt: 5 }}>
+            <hr />
             <Typography variant="caption" sx={{ color: "#fff" }}>
               Copyright © 2023 Matricolive, All rights reserved.
             </Typography>
