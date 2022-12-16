@@ -1,15 +1,11 @@
+import SectionOne from "../Components/SectionOne/SectionOne";
 
 const Home = () => {
-    return (
-        <div>
-            <h1>Home: Matricolive...</h1>
-            <h1>Home: Matricolive...</h1>
-            <h1>Home: Matricolive...</h1>
-            <h1>Home: Matricolive...</h1>
-            <h1>Home: Matricolive...</h1>
-            <h1>Home: Matricolive...</h1>
-        </div>
-    );
+  return (
+    <div>
+      <SectionOne />
+    </div>
+  );
 };
 
 export default Home;

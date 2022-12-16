@@ -104,7 +104,7 @@ const Footer = () => {
                         </Typography>
                       </li>
                       <li>
-                        <Typography variant="caption">It Expert</Typography>
+                        <Typography variant="caption">IT Expert</Typography>
                       </li>
                     </ul>
                   </Box>
