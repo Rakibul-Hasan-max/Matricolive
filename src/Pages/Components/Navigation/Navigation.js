@@ -37,8 +37,8 @@ function Navigation() {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor: "#142F43"}}>
-      <Container maxWidth="lg">
+    <AppBar position="static" sx={{backgroundColor: "#333991", padding: "0 45px"}}>
+      <Container maxWidth="lg" sx={{}}>
         <Toolbar disableGutters>
           <Typography
             variant="h6"
