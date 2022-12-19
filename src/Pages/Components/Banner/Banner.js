@@ -1,9 +1,9 @@
-import React from 'react';
+import banner from "../../../images/banner1.png";
 
 const Banner = () => {
     return (
         <div>
-            This is banner
+            <img style={{ width: "1080px", height: "380px" }} src={banner} alt="" />
         </div>
     );
 };

@@ -9,7 +9,7 @@ const SectionOne = () => {
         flexWrap: "wrap",
         border: "1px solid #E5B8F4",
         padding: "25px 50px",
-        margin: "50px 70px",
+        margin: "20px 70px 60px 70px",
         justifyContent: "center",
       }}
     >
