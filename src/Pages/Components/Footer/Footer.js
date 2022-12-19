@@ -66,11 +66,11 @@ const Footer = () => {
                 <Button
                   variant="contained"
                   sx={{
-                    background: "#f42828 !important",
+                    background: "#259B24 !important",
                     borderRadius: "0 !important",
                     py: 1,
                     px: 3,
-                    ml: -33,
+                    ml: -32,
                   }}
                 >
                   More About Us
