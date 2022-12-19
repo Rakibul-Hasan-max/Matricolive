@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+.scroll {
+  background-color: #259b24;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
