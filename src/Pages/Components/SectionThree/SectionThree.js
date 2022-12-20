@@ -1,5 +1,6 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
+import { NavLink } from "react-router-dom";
 import YourProduct from "./YourProduct";
 
 const SectionThree = () => {
@@ -12,11 +13,15 @@ const SectionThree = () => {
               variant="h5"
               sx={{ textAlign: "left", fontWeight: 500, mx: 5, mt: 5 }}
             >
-              For You Product <hr/>
+              For You Product <hr />
             </Typography>
-            <Box sx={{mb: 10}}>
-                <YourProduct />
-                <Button variant="contained" sx={{backgroundColor: "#259B24"}}>Shop Now</Button>
+            <Box sx={{ mb: 10 }}>
+              <YourProduct />
+              <NavLink to="/about" style={{ textDecoration: "none" }}>
+                <Button variant="contained" sx={{ backgroundColor: "#259B24" }}>
+                  Shop Now
+                </Button>
+              </NavLink>
             </Box>
           </Box>
         </Grid>

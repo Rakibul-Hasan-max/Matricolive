@@ -12,9 +12,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Tooltip from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../../images/logo.png";
 
-const pages = ["Products", "Shop", "Blog", "About", "Contact Us"];
+const pages = ["Home", "Shop"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Navigation() {
@@ -37,26 +38,30 @@ function Navigation() {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor: "#259B24", padding: "0 45px"}}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "#259B24", padding: "0 45px" }}
+    >
       <Container maxWidth="lg" sx={{}}>
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            <img style={{ width: "150px" }} src={logo} alt="" />
-          </Typography>
+          <NavLink to="/" style={{ textDecoration: "none" }}>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              <img style={{ width: "150px" }} src={logo} alt="" />
+            </Typography>
+          </NavLink>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
