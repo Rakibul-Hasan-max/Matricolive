@@ -21,9 +21,9 @@ import logo from "../../../images/logo.png";
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  backgroundColor: alpha(theme.palette.common.white, 0.25),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: alpha(theme.palette.common.white, 0.35),
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
@@ -158,7 +158,7 @@ export default function Navigation() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "#259B24" }}>
+      <AppBar position="fixed" sx={{ backgroundColor: "#259B24" }}>
         <Toolbar>
           <IconButton
             size="large"
