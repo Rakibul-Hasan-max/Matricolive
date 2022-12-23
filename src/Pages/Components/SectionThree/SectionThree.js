@@ -17,7 +17,7 @@ const SectionThree = () => {
             </Typography>
             <Box sx={{ mb: 10 }}>
               <YourProduct />
-              <NavLink to="/about" style={{ textDecoration: "none" }}>
+              <NavLink to="/shop" style={{ textDecoration: "none" }}>
                 <Button variant="contained" sx={{ backgroundColor: "#259B24" }}>
                   Shop Now
                 </Button>

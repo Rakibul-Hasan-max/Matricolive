@@ -12,169 +12,233 @@ export default function YourProduct() {
       <Card sx={{ maxWidth: 250 }}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://scontent.fdac8-1.fna.fbcdn.net/v/t39.30808-6/317082428_2164023450437277_1793934273531950862_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHAO-SzGLxBaKi6ZCZsWT4b129y9Y6e78DXb3L1jp7vwIjVa82fSW2a04daspsbzGNol0l7fFyQCLjRwfqzL8v-&_nc_ohc=ItSzgjGfg5sAX-RXpR5&tn=2nP2-vgM4Pft8-7R&_nc_ht=scontent.fdac8-1.fna&oh=00_AfBF8zrCZC9HdVTHUY1JaIs3UBu4III5InnvEW5c13miRQ&oe=63A5EA25"
+          height="250"
+          image="https://images.express.com/is/image/expressfashion/0039_04350006_0098_f002?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Bean Bag
+        <CardContent sx={{ textAlign: "left" }}>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="div"
+            color="primary"
+          >
+            1 Set Blazer Solid Color Turndown Collar Long Sleeve Slim Fit
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" color="#f44336">
+            ৳3500
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Add to cart</Button>
-          <Button size="small">Buy Now</Button>
+        <CardActions sx={{ justifyContent: "space-around" }}>
+          <Button size="small" variant="outlined">
+            Add to cart
+          </Button>
+          <Button size="small" variant="contained" color="success">
+            Buy Now
+          </Button>
         </CardActions>
       </Card>
       <Card sx={{ maxWidth: 250 }}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://images.prismic.io/rushordertees-web/0d4bbbe2-2678-4f38-9c7a-e7797be75ba0_Crewneck+Sweatshirts.jpg?auto=compress%2Cformat&rect=0%2C0%2C1600%2C1800&w=800"
+          height="250"
+          image="https://static-01.daraz.com.bd/p/53e72a92469dc5f08a5fec41a743e89c.jpg"
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            T-Shirt
+        <CardContent sx={{ textAlign: "left" }}>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="div"
+            color="primary"
+          >
+            Vintage Denim Jackets Men Slim Fit Casual Mens Jeans Coat
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" color="#f44336">
+            ৳4800
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Add to cart</Button>
-          <Button size="small">Buy Now</Button>
+        <CardActions sx={{ justifyContent: "space-around" }}>
+          <Button size="small" variant="outlined">
+            Add to cart
+          </Button>
+          <Button size="small" variant="contained" color="success">
+            Buy Now
+          </Button>
         </CardActions>
       </Card>
       <Card sx={{ maxWidth: 250 }}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2hpcnR8ZW58MHx8MHx8&w=1000&q=80"
+          height="250"
+          image="https://image.made-in-china.com/202f0j00OQSfURbIvGgj/Btl106542019new-Models-PU-Leather-Fashion-Lady-Hand-Bags-Shoulder-Women-Handbag.jpg"
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Shirt
+        <CardContent sx={{ textAlign: "left" }}>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="div"
+            color="primary"
+          >
+            Square Star Sequin Messenger Crossbody Bag for Women
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" color="#f44336">
+            ৳650
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Add to cart</Button>
-          <Button size="small">Buy Now</Button>
+        <CardActions sx={{ justifyContent: "space-around" }}>
+          <Button size="small" variant="outlined">
+            Add to cart
+          </Button>
+          <Button size="small" variant="contained" color="success">
+            Buy Now
+          </Button>
         </CardActions>
       </Card>
       <Card sx={{ maxWidth: 250 }}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://images.unsplash.com/photo-1564557287817-3785e38ec1f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9vZGllfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+          height="250"
+          image="https://m.media-amazon.com/images/I/7182N164NRL._AC_UL1500_.jpg"
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Hoodie
+        <CardContent sx={{ textAlign: "left" }}>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="div"
+            color="primary"
+          >
+            LouisWill Gold Brands Men Waterproof Luxury Watch
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" color="#f44336">
+            ৳2500
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Add to cart</Button>
-          <Button size="small">Buy Now</Button>
+        <CardActions sx={{ justifyContent: "space-around" }}>
+          <Button size="small" variant="outlined">
+            Add to cart
+          </Button>
+          <Button size="small" variant="contained" color="success">
+            Buy Now
+          </Button>
         </CardActions>
       </Card>
       <Card sx={{ maxWidth: 250 }}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://scontent.fdac8-1.fna.fbcdn.net/v/t39.30808-6/317082428_2164023450437277_1793934273531950862_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHAO-SzGLxBaKi6ZCZsWT4b129y9Y6e78DXb3L1jp7vwIjVa82fSW2a04daspsbzGNol0l7fFyQCLjRwfqzL8v-&_nc_ohc=ItSzgjGfg5sAX-RXpR5&tn=2nP2-vgM4Pft8-7R&_nc_ht=scontent.fdac8-1.fna&oh=00_AfBF8zrCZC9HdVTHUY1JaIs3UBu4III5InnvEW5c13miRQ&oe=63A5EA25"
+          height="250"
+          image="https://cf.shopee.com.my/file/30ad9cd35e543c42690aafce4ba2c392"
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Bean Bag
+        <CardContent sx={{ textAlign: "left" }}>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="div"
+            color="primary"
+          >
+            New Men Boots Leather Military Boots Men Winter
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" color="#f44336">
+            ৳4500
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Add to cart</Button>
-          <Button size="small">Buy Now</Button>
+        <CardActions sx={{ justifyContent: "space-around" }}>
+          <Button size="small" variant="outlined">
+            Add to cart
+          </Button>
+          <Button size="small" variant="contained" color="success">
+            Buy Now
+          </Button>
         </CardActions>
       </Card>
       <Card sx={{ maxWidth: 250 }}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://images.prismic.io/rushordertees-web/0d4bbbe2-2678-4f38-9c7a-e7797be75ba0_Crewneck+Sweatshirts.jpg?auto=compress%2Cformat&rect=0%2C0%2C1600%2C1800&w=800"
+          height="250"
+          image="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-luggage-1554348191.png?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*"
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            T-Shirt
+        <CardContent sx={{ textAlign: "left" }}>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="div"
+            color="primary"
+          >
+            VIP Hard Body Luggage - Quad 8 Wheels Polypropylene Luggage
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" color="#f44336">
+            ৳12000
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Add to cart</Button>
-          <Button size="small">Buy Now</Button>
+        <CardActions sx={{ justifyContent: "space-around" }}>
+          <Button size="small" variant="outlined">
+            Add to cart
+          </Button>
+          <Button size="small" variant="contained" color="success">
+            Buy Now
+          </Button>
         </CardActions>
       </Card>
       <Card sx={{ maxWidth: 250 }}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2hpcnR8ZW58MHx8MHx8&w=1000&q=80"
+          height="250"
+          image="https://techcrunch.com/wp-content/uploads/2022/02/am_hatsu_top.jpg?w=730&crop=1"
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Shirt
+        <CardContent sx={{ textAlign: "left" }}>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="div"
+            color="primary"
+          >
+            Custom Gaming Keyboard - Alice Layout 66 Keys
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" color="#f44336">
+            ৳3500
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Add to cart</Button>
-          <Button size="small">Buy Now</Button>
+        <CardActions sx={{ justifyContent: "space-around" }}>
+          <Button size="small" variant="outlined">
+            Add to cart
+          </Button>
+          <Button size="small" variant="contained" color="success">
+            Buy Now
+          </Button>
         </CardActions>
       </Card>
       <Card sx={{ maxWidth: 250 }}>
         <CardMedia
           component="img"
-          height="140"
-          image="https://images.unsplash.com/photo-1564557287817-3785e38ec1f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9vZGllfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+          height="250"
+          image="https://assets.reedpopcdn.com/g502x_f9QuuM8.jpeg/BROK/thumbnail/1200x1200/quality/100/g502x_f9QuuM8.jpeg"
           alt="green iguana"
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Hoodie
+        <CardContent sx={{ textAlign: "left" }}>
+          <Typography
+            gutterBottom
+            variant="body2"
+            component="div"
+            color="primary"
+          >
+            Gaming T-Wolf V6 Mouse With Multicolor Lighting
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography variant="body1" color="#f44336">
+            ৳1500
           </Typography>
         </CardContent>
-        <CardActions>
-          <Button size="small">Add to cart</Button>
-          <Button size="small">Buy Now</Button>
+        <CardActions sx={{ justifyContent: "space-around" }}>
+          <Button size="small" variant="outlined">
+            Add to cart
+          </Button>
+          <Button size="small" variant="contained" color="success">
+            Buy Now
+          </Button>
         </CardActions>
       </Card>
     </Box>
