@@ -7,10 +7,12 @@ const About = () => {
   return (
     <Box>
       <img style={{ width: "100%", height: "280px" }} src={banner} alt="" />
-      <Box>
-        <Typography>Meet our team</Typography>
+      <Box sx={{ my: 5 }}>
+        <Box>
+          <Typography variant="h5">Meet Our Team</Typography>
+        </Box>
+        <OurTeam />
       </Box>
-      <OurTeam />
     </Box>
   );
 };
