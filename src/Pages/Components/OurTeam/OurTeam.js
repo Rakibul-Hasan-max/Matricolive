@@ -37,7 +37,6 @@ function Media(props) {
   return (
     <Grid
       container
-      wrap="nowrap"
       sx={{ alignItem: "center", justifyContent: "center", gap: "20px", mt: 2 }}
     >
       {(loading ? Array.from(new Array(3)) : data).map((item, index) => (

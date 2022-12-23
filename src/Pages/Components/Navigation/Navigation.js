@@ -127,18 +127,18 @@ export default function Navigation() {
       <MenuItem>
         <IconButton
           size="large"
-          aria-label="show 2 new notifications"
+          aria-label="show 0 new notifications"
           color="inherit"
         >
-          <Badge badgeContent={2} color="error">
+          <Badge badgeContent={0} color="error">
             <NotificationsIcon />
           </Badge>
         </IconButton>
         <p>Notifications</p>
       </MenuItem>
       <MenuItem>
-        <IconButton size="large" aria-label="show 4 new cart" color="inherit">
-          <Badge badgeContent={4} color="error">
+        <IconButton size="large" aria-label="show 0 new cart" color="inherit">
+          <Badge badgeContent={0} color="error">
             <ShoppingCartIcon />
           </Badge>
         </IconButton>
@@ -202,19 +202,19 @@ export default function Navigation() {
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
             <IconButton
               size="large"
-              aria-label="show 2 new notifications"
+              aria-label="show 0 new notifications"
               color="inherit"
             >
-              <Badge badgeContent={2} color="error">
+              <Badge badgeContent={0} color="error">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
             <IconButton
               size="large"
-              aria-label="show 4 new cart"
+              aria-label="show 0 new cart"
               color="inherit"
             >
-              <Badge badgeContent={4} color="error">
+              <Badge badgeContent={0} color="error">
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
