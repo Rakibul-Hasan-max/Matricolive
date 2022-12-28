@@ -1,6 +1,12 @@
-import { Button, Container, Grid, Typography } from "@mui/material";
+import { Button, Container, Grid, Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube
+} from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../../images/logo.png";
 import "./Footer.css";
@@ -37,18 +43,81 @@ const Footer = () => {
                     Make your life easier with us
                   </Typography>
                   <Box sx={{ display: "flex", mt: 5, color: "#fff" }}>
-                    <Box className="footer-icon" sx={{marginRight: 1, border: "1px solid gray", padding: "3px 5px"}}>
-                      <FaFacebookF />
-                    </Box>
-                    <Box className="footer-icon" sx={{marginRight: 1, border: "1px solid gray", padding: "3px 5px"}}>
-                      <FaInstagram />
-                    </Box>
-                    <Box className="footer-icon" sx={{marginRight: 1, border: "1px solid gray", padding: "3px 5px"}}>
-                      <FaTwitter />
-                    </Box>
-                    <Box className="footer-icon" sx={{marginRight: 1, border: "1px solid gray", padding: "3px 5px"}}>
-                      <FaYoutube />
-                    </Box>
+                    <Link
+                      href="https://www.facebook.com/matricolive"
+                      color="inherit"
+                    >
+                      <Box
+                        className="footer-icon"
+                        sx={{
+                          marginRight: 1,
+                          border: "1px solid gray",
+                          padding: "3px 5px",
+                        }}
+                      >
+                        <FaFacebookF />
+                      </Box>
+                    </Link>
+                    <Link
+                      href="https://www.instagram.com/matricolive/"
+                      color="inherit"
+                    >
+                      <Box
+                        className="footer-icon"
+                        sx={{
+                          marginRight: 1,
+                          border: "1px solid gray",
+                          padding: "3px 5px",
+                        }}
+                      >
+                        <FaInstagram />
+                      </Box>
+                    </Link>
+                    <Link
+                      href="https://www.linkedin.com/company/matricolive/"
+                      color="inherit"
+                    >
+                      <Box
+                        className="footer-icon"
+                        sx={{
+                          marginRight: 1,
+                          border: "1px solid gray",
+                          padding: "3px 5px",
+                        }}
+                      >
+                        <FaLinkedin />
+                      </Box>
+                    </Link>
+                    <Link
+                      href="https://www.youtube.com/@matricolive"
+                      color="inherit"
+                    >
+                      <Box
+                        className="footer-icon"
+                        sx={{
+                          marginRight: 1,
+                          border: "1px solid gray",
+                          padding: "3px 5px",
+                        }}
+                      >
+                        <FaYoutube />
+                      </Box>
+                    </Link>
+                    <Link
+                      href="https://twitter.com/rakibul_h4041"
+                      color="inherit"
+                    >
+                      <Box
+                        className="footer-icon"
+                        sx={{
+                          marginRight: 1,
+                          border: "1px solid gray",
+                          padding: "3px 5px",
+                        }}
+                      >
+                        <FaTwitter />
+                      </Box>
+                    </Link>
                   </Box>
                 </Box>
               </Box>
@@ -57,7 +126,10 @@ const Footer = () => {
               <Typography variant="h6" sx={{ fontSize: 25, textAlign: "left" }}>
                 About Us
               </Typography>
-              <Typography variant="body2" sx={{ my: 3, textAlign: "left", fontSize: 12 }}>
+              <Typography
+                variant="body2"
+                sx={{ my: 3, textAlign: "left", fontSize: 12 }}
+              >
                 Here we are ready to provide you with the best quality product
                 from our own production. If you need any product, feel free to
                 inbox us with the product code and place your order.
