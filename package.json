@@ -1,5 +1,6 @@
 {
   "name": "matricolive",
+  "homepage": "https://matricolive.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

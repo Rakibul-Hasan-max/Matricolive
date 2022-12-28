@@ -5,27 +5,27 @@ import Typography from "@mui/material/Typography";
 
 const data = [
   {
-    src: "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=2000",
+    src: "https://live.staticflickr.com/65535/52590653572_0bbdc6fd9a_w.jpg",
     name: "Md Foriduzzaman Sourov",
     title: "Founder & CEO",
   },
   {
-    src: "https://img.freepik.com/premium-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?w=2000",
+    src: "https://live.staticflickr.com/65535/52590630127_5434b566a0_n.jpg",
     name: "Rakibul Hasan",
-    title: "Founder & CTO",
+    title: "Co-Founder & CTO",
   },
   {
-    src: "https://t4.ftcdn.net/jpg/02/87/35/99/360_F_287359914_HU3P7rhmyJMyyhBBcILcWd2S7DDwkJSs.jpg",
-    name: "Shubhro Dev Mohonto",
-    title: "Content Creator",
-  },
-  {
-    src: "https://media.istockphoto.com/id/1045886560/photo/portrait-of-smiling-handsome-man-in-blue-t-shirt-standing-with-crossed-arms-isolated-on-grey.jpg?s=612x612&w=0&k=20&c=TX1-1UJ3PKonFEmgs_WDZf7wtfqKVMHYjeRaYjaZ1Rc=",
+    src: "https://live.staticflickr.com/65535/52591141416_1788a82454_w.jpg",
     name: "Md Siyam",
     title: "Graphic Designer",
   },
   {
-    src: "https://cdn.webshopapp.com/shops/50297/files/404926835/image.jpg",
+    src: "https://live.staticflickr.com/65535/52591141306_5c10c001a3_w.jpg",
+    name: "Shubhro Dev Mohonto",
+    title: "Content Creator",
+  },
+  {
+    src: "https://live.staticflickr.com/65535/52590653737_06dc97e484_w.jpg",
     name: "Md Imran Khan",
     title: "Digital Marketer",
   },
@@ -43,7 +43,7 @@ function Media(props) {
         <Box key={index} sx={{ width: 200 }}>
           {item ? (
             <img
-              style={{ width: 200, height: 200 }}
+              style={{ width: 200, height: 240 }}
               alt={item.name}
               src={item.src}
             />
