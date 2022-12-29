@@ -3,9 +3,7 @@ import { Box } from "@mui/system";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedin,
-  FaTwitter,
-  FaYoutube
+  FaLinkedin, FaYoutube
 } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../../images/logo.png";
@@ -40,7 +38,7 @@ const Footer = () => {
                     variant="subtitle2"
                     sx={{ color: "#fff", textAlign: "left" }}
                   >
-                    Make your life easier with us
+                    Make your life easier
                   </Typography>
                   <Box sx={{ display: "flex", mt: 5, color: "#fff" }}>
                     <Link
@@ -101,21 +99,6 @@ const Footer = () => {
                         }}
                       >
                         <FaYoutube />
-                      </Box>
-                    </Link>
-                    <Link
-                      href="https://twitter.com/rakibul_h4041"
-                      color="inherit"
-                    >
-                      <Box
-                        className="footer-icon"
-                        sx={{
-                          marginRight: 1,
-                          border: "1px solid gray",
-                          padding: "3px 5px",
-                        }}
-                      >
-                        <FaTwitter />
                       </Box>
                     </Link>
                   </Box>
