@@ -1,7 +1,7 @@
 import AddBanner from "../Components/AddBanner/AddBanner";
 import Banner from "../Components/Banner/Banner";
+import BannerThree from "../Components/BannerThree/BannerThree";
 import Newsletter from "../Components/Newsletter/Newsletter";
-import SectionFive from "../Components/SectionFive/SectionFive";
 import SectionFour from "../Components/SectionFour/SectionFour";
 import SectionOne from "../Components/SectionOne/SectionOne";
 import SectionThree from "../Components/SectionThree/SectionThree";
@@ -15,8 +15,8 @@ const Home = () => {
       <SectionTwo />
       <AddBanner />
       <SectionThree />
+      <BannerThree />
       <SectionFour />
-      <SectionFive />
       <Newsletter />
     </div>
   );
