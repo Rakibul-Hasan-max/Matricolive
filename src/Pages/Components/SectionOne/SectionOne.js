@@ -48,7 +48,7 @@ const SectionOne = () => {
       >
         <ManageHistoryIcon sx={{ color: "#336699" }} fontSize="large" />
         <Box>
-          <Typography variant="body1">90 Days Return</Typography>
+          <Typography variant="body1">30 Days Return</Typography>
           <Typography variant="caption" sx={{ color: "grey" }}>
             If goods have problems
           </Typography>

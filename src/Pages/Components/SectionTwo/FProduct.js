@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
+import { NavLink } from "react-router-dom";
 
 export default function FProduct() {
   return (
@@ -13,18 +14,20 @@ export default function FProduct() {
         <CardMedia
           component="img"
           height="250"
-          image="https://scontent.fdac8-1.fna.fbcdn.net/v/t39.30808-6/317082428_2164023450437277_1793934273531950862_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHAO-SzGLxBaKi6ZCZsWT4b129y9Y6e78DXb3L1jp7vwIjVa82fSW2a04daspsbzGNol0l7fFyQCLjRwfqzL8v-&_nc_ohc=ItSzgjGfg5sAX-RXpR5&tn=2nP2-vgM4Pft8-7R&_nc_ht=scontent.fdac8-1.fna&oh=00_AfBF8zrCZC9HdVTHUY1JaIs3UBu4III5InnvEW5c13miRQ&oe=63A5EA25"
+          image="https://ii1.pepperfry.com/media/catalog/product/c/o/1100x1210/combo-classic-xxxl-bean-bag---foot-stool-with-beans-in-black-colour-by-sattva-combo-classic-xxxl-bea-q5ulln.jpg"
           alt="green iguana"
         />
         <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            XXL Bean Bag Premium, Leg rest & Cushion Combo Set
-          </Typography>
+          <NavLink to="/details" style={{ textDecoration: "none" }}>
+            <Typography
+              gutterBottom
+              variant="body2"
+              component="div"
+              color="primary"
+            >
+              XXL Bean Bag Premium, Leg rest & Cushion Combo Set
+            </Typography>
+          </NavLink>
           <Typography variant="body1" color="#f44336">
             ৳4500
           </Typography>
@@ -33,7 +36,11 @@ export default function FProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
+          <Button
+            size="small"
+            variant="contained"
+            sx={{ backgroundColor: "#336699" }}
+          >
             Buy Now
           </Button>
         </CardActions>
@@ -42,18 +49,20 @@ export default function FProduct() {
         <CardMedia
           component="img"
           height="250"
-          image="https://images.prismic.io/rushordertees-web/0d4bbbe2-2678-4f38-9c7a-e7797be75ba0_Crewneck+Sweatshirts.jpg?auto=compress%2Cformat&rect=0%2C0%2C1600%2C1800&w=800"
+          image="https://i.pinimg.com/originals/f4/51/9c/f4519cdb86f8cd96da000e78bade4f08.jpg"
           alt="green iguana"
         />
         <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            Trendy Stylish Men Cotton Round Neck Full Sleeve T-Shirt
-          </Typography>
+          <NavLink to="/details" style={{ textDecoration: "none" }}>
+            <Typography
+              gutterBottom
+              variant="body2"
+              component="div"
+              color="primary"
+            >
+              Trendy Stylish Men Cotton Round Neck Full Sleeve T-Shirt
+            </Typography>
+          </NavLink>
           <Typography variant="body1" color="#f44336">
             ৳600
           </Typography>
@@ -62,7 +71,11 @@ export default function FProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
+          <Button
+            size="small"
+            variant="contained"
+            sx={{ backgroundColor: "#336699" }}
+          >
             Buy Now
           </Button>
         </CardActions>
@@ -75,14 +88,16 @@ export default function FProduct() {
           alt="green iguana"
         />
         <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            STYLISH new fashon long sleeve shirt for man
-          </Typography>
+          <NavLink to="/details" style={{ textDecoration: "none" }}>
+            <Typography
+              gutterBottom
+              variant="body2"
+              component="div"
+              color="primary"
+            >
+              STYLISH new fashon long sleeve shirt for man
+            </Typography>
+          </NavLink>
           <Typography variant="body1" color="#f44336">
             ৳400
           </Typography>
@@ -91,7 +106,11 @@ export default function FProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
+          <Button
+            size="small"
+            variant="contained"
+            sx={{ backgroundColor: "#336699" }}
+          >
             Buy Now
           </Button>
         </CardActions>
@@ -104,14 +123,16 @@ export default function FProduct() {
           alt="green iguana"
         />
         <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            Preimum Quality Winter Hoodie For Men
-          </Typography>
+          <NavLink to="/details" style={{ textDecoration: "none" }}>
+            <Typography
+              gutterBottom
+              variant="body2"
+              component="div"
+              color="primary"
+            >
+              Preimum Quality Winter Hoodie For Men
+            </Typography>
+          </NavLink>
           <Typography variant="body1" color="#f44336">
             ৳500
           </Typography>
@@ -120,7 +141,11 @@ export default function FProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
+          <Button
+            size="small"
+            variant="contained"
+            sx={{ backgroundColor: "#336699" }}
+          >
             Buy Now
           </Button>
         </CardActions>
