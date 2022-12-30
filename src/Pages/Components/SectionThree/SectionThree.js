@@ -18,7 +18,7 @@ const SectionThree = () => {
             <Box sx={{ mb: 10 }}>
               <YourProduct />
               <NavLink to="/shop" style={{ textDecoration: "none" }}>
-                <Button variant="contained" sx={{ backgroundColor: "#259B24" }}>
+                <Button variant="contained" sx={{ backgroundColor: "#336699" }}>
                   Shop Now
                 </Button>
               </NavLink>

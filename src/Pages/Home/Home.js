@@ -1,5 +1,6 @@
 import AddBanner from "../Components/AddBanner/AddBanner";
 import Banner from "../Components/Banner/Banner";
+import Newsletter from "../Components/Newsletter/Newsletter";
 import SectionFive from "../Components/SectionFive/SectionFive";
 import SectionFour from "../Components/SectionFour/SectionFour";
 import SectionOne from "../Components/SectionOne/SectionOne";
@@ -16,6 +17,7 @@ const Home = () => {
       <SectionThree />
       <SectionFour />
       <SectionFive />
+      <Newsletter />
     </div>
   );
 };

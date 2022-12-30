@@ -33,7 +33,7 @@ export default function YourProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" color="success">
+          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
             Buy Now
           </Button>
         </CardActions>
@@ -62,7 +62,7 @@ export default function YourProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" color="success">
+          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
             Buy Now
           </Button>
         </CardActions>
@@ -91,7 +91,7 @@ export default function YourProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" color="success">
+          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
             Buy Now
           </Button>
         </CardActions>
@@ -120,7 +120,7 @@ export default function YourProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" color="success">
+          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
             Buy Now
           </Button>
         </CardActions>
@@ -149,7 +149,7 @@ export default function YourProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" color="success">
+          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
             Buy Now
           </Button>
         </CardActions>
@@ -178,7 +178,7 @@ export default function YourProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" color="success">
+          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
             Buy Now
           </Button>
         </CardActions>
@@ -207,7 +207,7 @@ export default function YourProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" color="success">
+          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
             Buy Now
           </Button>
         </CardActions>
@@ -236,7 +236,7 @@ export default function YourProduct() {
           <Button size="small" variant="outlined">
             Add to cart
           </Button>
-          <Button size="small" variant="contained" color="success">
+          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
             Buy Now
           </Button>
         </CardActions>

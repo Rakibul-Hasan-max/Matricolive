@@ -28,7 +28,7 @@ const SectionOne = () => {
           gap: "10px",
         }}
       >
-        <LocalShippingIcon color="success" fontSize="large" />
+        <LocalShippingIcon sx={{ color: "#336699" }} fontSize="large" />
         <Box>
           <Typography variant="body1">Free Delivery</Typography>
           <Typography variant="caption" sx={{ color: "grey" }}>
@@ -46,7 +46,7 @@ const SectionOne = () => {
           gap: "10px",
         }}
       >
-        <ManageHistoryIcon color="success" fontSize="large" />
+        <ManageHistoryIcon sx={{ color: "#336699" }} fontSize="large" />
         <Box>
           <Typography variant="body1">90 Days Return</Typography>
           <Typography variant="caption" sx={{ color: "grey" }}>
@@ -64,7 +64,7 @@ const SectionOne = () => {
           gap: "10px",
         }}
       >
-        <PaymentIcon color="success" fontSize="large" />
+        <PaymentIcon sx={{ color: "#336699" }} fontSize="large" />
         <Box>
           <Typography variant="body1">Secure Payment</Typography>
           <Typography variant="caption" sx={{ color: "grey" }}>
@@ -82,7 +82,7 @@ const SectionOne = () => {
           gap: "10px",
         }}
       >
-        <PermPhoneMsgIcon color="success" fontSize="large" />
+        <PermPhoneMsgIcon sx={{ color: "#336699" }} fontSize="large" />
         <Box>
           <Typography variant="body1">24/7 Support</Typography>
           <Typography variant="caption" sx={{ color: "grey" }}>
@@ -99,7 +99,7 @@ const SectionOne = () => {
           gap: "10px",
         }}
       >
-        <RedeemIcon color="success" fontSize="large" />
+        <RedeemIcon sx={{ color: "#336699" }} fontSize="large" />
         <Box>
           <Typography variant="body1">Gift Service</Typography>
           <Typography variant="caption" sx={{ color: "grey" }}>

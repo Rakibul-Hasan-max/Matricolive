@@ -161,7 +161,7 @@ export default function Navigation() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed" sx={{ backgroundColor: "#259B24" }}>
+      <AppBar position="fixed" sx={{ backgroundColor: "#336699" }}>
         <Toolbar>
           <IconButton
             size="large"
