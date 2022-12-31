@@ -117,7 +117,7 @@ const Footer = () => {
                 from our own production. If you need any product, feel free to
                 inbox us with the product code and place your order.
               </Typography>
-              <NavLink to="/about" style={{ textDecoration: "none" }}>
+              <NavLink to="/home" style={{ textDecoration: "none" }}>
                 <Button
                   variant="contained"
                   sx={{
