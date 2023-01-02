@@ -1,6 +1,6 @@
 import AddBanner from "../Components/AddBanner/AddBanner";
-import Banner from "../Components/Banner/Banner";
 import BannerThree from "../Components/BannerThree/BannerThree";
+import Carousel from "../Components/Carousel/Carousel";
 import Newsletter from "../Components/Newsletter/Newsletter";
 import SectionFour from "../Components/SectionFour/SectionFour";
 import SectionOne from "../Components/SectionOne/SectionOne";
@@ -10,7 +10,7 @@ import SectionTwo from "../Components/SectionTwo/SectionTwo";
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <Carousel />
       <SectionOne />
       <SectionTwo />
       <AddBanner />
