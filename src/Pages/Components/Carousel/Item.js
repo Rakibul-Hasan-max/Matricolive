@@ -1,17 +1,21 @@
-import { Button, Paper } from '@mui/material';
+import { Button, Paper } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
-function Item({item})
-{
-    return (
-        <Paper>
-            <img src={item.image} alt={item.title} style={{width: "100%", maxHeight: "400px"}} />
-            <h2>{item.title}</h2>
-
-            <Button className="CheckButton">
-                Check it out!
-            </Button>
-        </Paper>
-    )
+function Item({ item }) {
+  return (
+    <Paper>
+      <img
+        src={item.image}
+        alt={item.title}
+        style={{ width: "100%", maxHeight: "400px" }}
+      />
+      <NavLink to="/details" style={{ textDecoration: "none" }}>
+        <Button variant="contained" sx={{ marginTop: "-150px" }}>
+          Order Now
+        </Button>
+      </NavLink>
+    </Paper>
+  );
 }
 
 export default Item;
