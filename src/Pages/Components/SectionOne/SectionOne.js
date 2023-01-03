@@ -16,6 +16,7 @@ const SectionOne = () => {
         padding: "25px 0px",
         margin: "20px 70px 60px 70px",
         justifyContent: "center",
+        rowGap: "50px",
       }}
     >
       <Box

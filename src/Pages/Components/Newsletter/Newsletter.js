@@ -1,28 +1,31 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
-import { Button, Input, Typography } from "@mui/material";
+import { Button, Grid, Input, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
 const Newsletter = () => {
   return (
     <Box sx={{ backgroundColor: "#336699" }}>
-      <Box
+      <Grid
         sx={{
           display: "flex",
-          flexDirection: "row",
-          gap: "80px",
+          flexWrap: "wrap",
+          columnGap: "80px",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <Box
+        <Grid
+          item
           sx={{
             display: "flex",
             flexDirection: "row",
-            py: "20px",
+            p: "20px",
             alignItems: "center",
             gap: "10px",
           }}
+          xs={12}
+          md={6}
         >
           <MailOutlinedIcon sx={{ color: "white", fontSize: "43px" }} />
           <Box sx={{ textAlign: "left" }}>
@@ -36,21 +39,24 @@ const Newsletter = () => {
               Get all the latest information on Events, Sales and Offers.
             </Typography>
           </Box>
-        </Box>
-        <Box
+        </Grid>
+        <Grid
+          item
           sx={{
             display: "flex",
             flexDirection: "row",
-            py: "20px",
+            p: "20px",
             alignItems: "center",
             gap: "10px",
           }}
+          xs={12}
+          md={6}
         >
           <Input
-            placeholder="Your E-mail Address"
+            placeholder="Enter your email:"
             sx={{
               backgroundColor: "white",
-              width: "450px",
+              maxWidth: "100%",
               padding: "3px 10px",
               borderRadius: "3px",
             }}
@@ -66,8 +72,8 @@ const Newsletter = () => {
             SUBSCRIBE
             <ArrowForwardIcon sx={{ fontSize: "15px", marginLeft: "5px" }} />
           </Button>
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
     </Box>
   );
 };

@@ -1,5 +1,4 @@
-import { Button, Paper } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { Paper } from "@mui/material";
 
 function Item({ item }) {
   return (
@@ -9,11 +8,11 @@ function Item({ item }) {
         alt={item.title}
         style={{ width: "100%", maxHeight: "400px" }}
       />
-      <NavLink to="/details" style={{ textDecoration: "none" }}>
+      {/* <NavLink to="/details" style={{ textDecoration: "none" }}>
         <Button variant="contained" sx={{ marginTop: "-150px" }}>
           Order Now
         </Button>
-      </NavLink>
+      </NavLink> */}
     </Paper>
   );
 }
