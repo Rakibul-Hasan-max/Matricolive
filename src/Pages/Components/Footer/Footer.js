@@ -3,7 +3,8 @@ import { Box } from "@mui/system";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedin, FaYoutube
+  FaLinkedin,
+  FaYoutube
 } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
 import logo from "../../../images/logo.png";
@@ -30,7 +31,7 @@ const Footer = () => {
                   <img
                     style={{ width: "162.5px", height: "auto" }}
                     src={logo}
-                    alt=""
+                    alt="logo"
                   />
                 </Box>
                 <Box>
@@ -105,7 +106,7 @@ const Footer = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} md={5} sx={{ color: "#fff" }}>
+            <Grid item xs={12} md={3} sx={{ color: "#fff" }}>
               <Typography variant="h6" sx={{ fontSize: 25, textAlign: "left" }}>
                 About Us
               </Typography>
@@ -125,16 +126,41 @@ const Footer = () => {
                     borderRadius: "0 !important",
                     py: 1,
                     px: 3,
-                    ml: -32,
                   }}
                 >
                   More About Us
                 </Button>
               </NavLink>
             </Grid>
-            <Grid item xs={12} md={4} sx={{ color: "#fff" }}>
+            <Grid item xs={12} md={6} sx={{ color: "#fff" }}>
               <Grid container spacing={3}>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} md={4}>
+                  <Box sx={{ textAlign: "left" }}>
+                    <Typography variant="h6" sx={{ fontSize: 25 }}>
+                      Quick Link
+                    </Typography>
+                    <ul style={{ marginTop: "24px" }}>
+                      <li>
+                        <Typography variant="caption">Home</Typography>
+                      </li>
+                      <li>
+                        <Typography variant="caption">Shop</Typography>
+                      </li>
+                      <li>
+                        <Typography variant="caption">Blog</Typography>
+                      </li>
+                      <li>
+                        <Typography variant="caption">
+                          Terms & conditions
+                        </Typography>
+                      </li>
+                      <li>
+                        <Typography variant="caption">Contact Us</Typography>
+                      </li>
+                    </ul>
+                  </Box>
+                </Grid>
+                <Grid item xs={12} sm={6} md={4}>
                   <Box sx={{ textAlign: "left" }}>
                     <Typography variant="h6" sx={{ fontSize: 25 }}>
                       Careers
@@ -164,7 +190,7 @@ const Footer = () => {
                     </ul>
                   </Box>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} sm={6} md={4}>
                   <Box sx={{ textAlign: "left" }}>
                     <Typography variant="h6" sx={{ fontSize: 25 }}>
                       Our Service
