@@ -9,7 +9,7 @@ const SectionFour = () => {
           <Box>
             <Typography
               variant="h5"
-              sx={{ textAlign: "left", fontWeight: 500, mx: 5, mt: 5 }}
+              sx={{ textAlign: "left", fontWeight: 500, mx: 5, marginTop: "80px" }}
             >
               Delivery Partner <hr />
             </Typography>

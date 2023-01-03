@@ -1,66 +1,121 @@
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Button, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import Box from "@mui/material/Box";
+import ButtonBase from "@mui/material/ButtonBase";
+import { styled } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
 
-const BannerThree = () => {
+const images = [
+  {
+    url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8&w=1000&q=80",
+    title: "Home Interior ",
+    width: "40%",
+  },
+  {
+    url: "https://www.artemisiacollege.com/wp-content/uploads/2020/01/INTERIOR-DESIGN.jpg",
+    title: "Office Interior",
+    width: "30%",
+  },
+  {
+    url: "https://www.theaa.ie/wp-content/uploads/2022/06/spacejoy-YI2YkyaREHk-unsplash-scaled.jpg",
+    title: "Room Interior",
+    width: "30%",
+  },
+];
+
+const ImageButton = styled(ButtonBase)(({ theme }) => ({
+  position: "relative",
+  height: 200,
+  [theme.breakpoints.down("sm")]: {
+    width: "100% !important", // Overrides inline-style
+    height: 100,
+  },
+  "&:hover, &.Mui-focusVisible": {
+    zIndex: 1,
+    "& .MuiImageBackdrop-root": {
+      opacity: 0.15,
+    },
+    "& .MuiImageMarked-root": {
+      opacity: 0,
+    },
+    "& .MuiTypography-root": {
+      border: "4px solid currentColor",
+    },
+  },
+}));
+
+const ImageSrc = styled("span")({
+  position: "absolute",
+  left: 0,
+  right: 0,
+  top: 0,
+  bottom: 0,
+  backgroundSize: "cover",
+  backgroundPosition: "center 40%",
+});
+
+const Image = styled("span")(({ theme }) => ({
+  position: "absolute",
+  left: 0,
+  right: 0,
+  top: 0,
+  bottom: 0,
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  color: theme.palette.common.white,
+}));
+
+const ImageBackdrop = styled("span")(({ theme }) => ({
+  position: "absolute",
+  left: 0,
+  right: 0,
+  top: 0,
+  bottom: 0,
+  backgroundColor: theme.palette.common.black,
+  opacity: 0.4,
+  transition: theme.transitions.create("opacity"),
+}));
+
+const ImageMarked = styled("span")(({ theme }) => ({
+  height: 3,
+  width: 18,
+  backgroundColor: theme.palette.common.white,
+  position: "absolute",
+  bottom: -2,
+  left: "calc(50% - 9px)",
+  transition: theme.transitions.create("opacity"),
+}));
+
+export default function BannerThree() {
   return (
-    <Box sx={{ backgroundColor: "#336699", marginBottom: "80px" }}>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          gap: "80px",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            py: "20px",
-            alignItems: "center",
-            gap: "10px",
+    <Box sx={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
+      {images.map((image) => (
+        <ImageButton
+          focusRipple
+          key={image.title}
+          style={{
+            width: image.width,
           }}
         >
-          <Typography variant="h3" sx={{color: "white"}}>25% OFF</Typography>
-          <Box sx={{ textAlign: "left" }}>
-            <Typography variant="h6" sx={{ color: "white", fontSize: "14px" }}>
-              FOR TODAY'S FASHION
-            </Typography>
+          <ImageSrc style={{ backgroundImage: `url(${image.url})` }} />
+          <ImageBackdrop className="MuiImageBackdrop-root" />
+          <Image>
             <Typography
-              variant="body2"
-              sx={{ color: "white", fontSize: "12px" }}
+              component="span"
+              variant="subtitle1"
+              color="inherit"
+              sx={{
+                position: "relative",
+                p: 4,
+                pt: 2,
+                pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
+              }}
             >
-              Use code Black 12345 to get best offer.
+              {image.title}
+              <ImageMarked className="MuiImageMarked-root" />
             </Typography>
-          </Box>
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "row",
-            py: "20px",
-            alignItems: "center",
-            gap: "10px",
-          }}
-        >
-          <Button
-            variant="outlined"
-            sx={{
-              color: "white",
-              fontSize: "12px",
-              padding: "8px 20px",
-              borderColor: "white",
-            }}
-          >
-            SHOP NOW
-            <ArrowForwardIcon sx={{ fontSize: "15px", marginLeft: "5px" }} />
-          </Button>
-        </Box>
-      </Box>
+          </Image>
+        </ImageButton>
+      ))}
     </Box>
   );
-};
-
-export default BannerThree;
+}
