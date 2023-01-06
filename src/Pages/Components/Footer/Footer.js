@@ -1,4 +1,4 @@
-import { Button, Container, Grid, Link, Typography } from "@mui/material";
+import { Container, Grid, Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import {
   FaFacebookF,
@@ -6,8 +6,8 @@ import {
   FaLinkedin,
   FaYoutube
 } from "react-icons/fa";
-import { NavLink, useLocation } from "react-router-dom";
-import logo from "../../../images/logo.png";
+import { useLocation } from "react-router-dom";
+import logo2 from "../../../images/logo2.png";
 import "./Footer.css";
 
 const Footer = () => {
@@ -27,21 +27,21 @@ const Footer = () => {
           <Grid container spacing={5}>
             <Grid item xs={12} md={3}>
               <Box>
-                <Box sx={{ marginLeft: -10 }}>
+                <Box>
                   <img
-                    style={{ width: "162.5px", height: "auto" }}
-                    src={logo}
+                    style={{ width: "100%", height: "auto" }}
+                    src={logo2}
                     alt="logo"
                   />
                 </Box>
-                <Box>
+                <Box sx={{mt: 4}}>
                   <Typography
-                    variant="subtitle2"
+                    variant="body2"
                     sx={{ color: "#fff", textAlign: "left" }}
                   >
-                    Make your life easier
+                    Connect with our social network
                   </Typography>
-                  <Box sx={{ display: "flex", mt: 5, color: "#fff" }}>
+                  <Box sx={{ display: "flex", mt: 2, color: "#fff" }}>
                     <Link
                       href="https://www.facebook.com/matricolive"
                       color="inherit"
@@ -118,7 +118,7 @@ const Footer = () => {
                 from our own production. If you need any product, feel free to
                 inbox us with the product code and place your order.
               </Typography>
-              <NavLink to="/home" style={{ textDecoration: "none" }}>
+              {/* <NavLink to="/home" style={{ textDecoration: "none" }}>
                 <Button
                   variant="contained"
                   sx={{
@@ -130,7 +130,7 @@ const Footer = () => {
                 >
                   More About Us
                 </Button>
-              </NavLink>
+              </NavLink> */}
             </Grid>
             <Grid item xs={12} md={6} sx={{ color: "#fff" }}>
               <Grid container spacing={3}>
