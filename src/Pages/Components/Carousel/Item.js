@@ -1,8 +1,8 @@
-import { Paper } from "@mui/material";
+import { Box } from "@mui/material";
 
 function Item({ item }) {
   return (
-    <Paper>
+    <Box>
       <img
         src={item.image}
         alt={item.title}
@@ -13,7 +13,7 @@ function Item({ item }) {
           Order Now
         </Button>
       </NavLink> */}
-    </Paper>
+    </Box>
   );
 }
 

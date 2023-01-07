@@ -1,9 +1,8 @@
-import banner from "../../../images/banner2.png";
 
 const AddBanner = () => {
     return (
         <div>
-            <img style={{ width: "100%", maxHeight: "380px", margin: "50px 0" }} src={banner} alt="Product Banner" />
+            <img style={{ width: "88.5%", maxHeight: "380px", margin: "30px 0" }} src="https://i.ibb.co/TM5mr0s/banner4.png" alt="Product Banner" />
         </div>
     );
 };
