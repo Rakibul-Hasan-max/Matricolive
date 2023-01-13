@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop smooth color="#FFFFFF" className="scroll" height="20" />
+        <ScrollToTop smooth height="20" />
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
