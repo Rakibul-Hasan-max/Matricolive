@@ -147,7 +147,7 @@ const Footer = () => {
                         <Typography variant="caption">Shop</Typography>
                       </li>
                       <li>
-                        <Typography variant="caption">Blog</Typography>
+                        <Typography variant="caption">Privacy Policy</Typography>
                       </li>
                       <li>
                         <Typography variant="caption">
