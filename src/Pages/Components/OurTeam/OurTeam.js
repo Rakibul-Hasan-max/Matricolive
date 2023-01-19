@@ -5,29 +5,24 @@ import Typography from "@mui/material/Typography";
 
 const data = [
   {
-    src: "https://live.staticflickr.com/65535/52590653572_0bbdc6fd9a_w.jpg",
-    name: "Md Foriduzzaman Sourov",
+    src: "https://i.ibb.co/grQPFsz/sourov-removebg-preview.png",
+    name: "Foriduzzaman Sourov",
     title: "Founder & CEO",
   },
   {
-    src: "https://live.staticflickr.com/65535/52590630127_5434b566a0_n.jpg",
+    src: "https://i.ibb.co/1MpxYqd/hasan.jpg",
     name: "Rakibul Hasan",
     title: "Co-Founder & CTO",
   },
   {
     src: "https://live.staticflickr.com/65535/52591141416_1788a82454_w.jpg",
     name: "Md Siyam",
-    title: "Graphic Designer",
+    title: "Graphic Artist & Photographer",
   },
   {
     src: "https://live.staticflickr.com/65535/52591141306_5c10c001a3_w.jpg",
     name: "Shubhro Dev Mohonto",
-    title: "Content Creator",
-  },
-  {
-    src: "https://live.staticflickr.com/65535/52590653737_06dc97e484_w.jpg",
-    name: "Md Imran Khan",
-    title: "Digital Marketer",
+    title: "Business Development Officer",
   },
 ];
 
@@ -43,7 +38,7 @@ function Media(props) {
         <Box key={index} sx={{ width: 200 }}>
           {item ? (
             <img
-              style={{ width: 200, height: 240 }}
+              style={{ width: 200, height: 200 }}
               alt={item.name}
               src={item.src}
             />

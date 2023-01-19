@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaYoutube
 } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo2 from "../../../images/logo2.png";
 import "./Footer.css";
 
@@ -140,12 +140,21 @@ const Footer = () => {
                       Quick Link
                     </Typography>
                     <ul style={{ marginTop: "24px" }}>
+                      <NavLink to="/home" style={{ textDecoration: "none", color: "#fff" }}>
                       <li>
                         <Typography variant="caption">Home</Typography>
                       </li>
+                      </NavLink>
+                      <NavLink to="/shop" style={{ textDecoration: "none", color: "#fff" }}>
                       <li>
                         <Typography variant="caption">Shop</Typography>
                       </li>
+                      </NavLink>
+                      <NavLink to="/about" style={{ textDecoration: "none", color: "#fff" }}>
+                      <li>
+                        <Typography variant="caption">About Us</Typography>
+                      </li>
+                      </NavLink>
                       <li>
                         <Typography variant="caption">Privacy Policy</Typography>
                       </li>
