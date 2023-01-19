@@ -16,7 +16,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../../images/logo.png";
+import logo from "../../../../images/logo.png";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",

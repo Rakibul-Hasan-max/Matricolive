@@ -7,7 +7,7 @@ import {
   FaYoutube
 } from "react-icons/fa";
 import { NavLink, useLocation } from "react-router-dom";
-import logo2 from "../../../images/logo2.png";
+import logo2 from "../../../../images/logo2.png";
 import "./Footer.css";
 
 const Footer = () => {
