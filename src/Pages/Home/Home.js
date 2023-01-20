@@ -1,7 +1,6 @@
 import AddBanner from "../Components/AddBanner/AddBanner";
 import BannerThree from "../Components/BannerThree/BannerThree";
 import Carousel from "../Components/Carousel/Carousel";
-import Newsletter from "../Components/Newsletter/Newsletter";
 import SectionFour from "../Components/SectionFour/SectionFour";
 import SectionOne from "../Components/SectionOne/SectionOne";
 import SectionThree from "../Components/SectionThree/SectionThree";
@@ -17,7 +16,6 @@ const Home = () => {
       <SectionThree />
       <BannerThree />
       <SectionFour />
-      <Newsletter />
     </div>
   );
 };

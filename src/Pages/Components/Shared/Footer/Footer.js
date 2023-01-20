@@ -141,31 +141,37 @@ const Footer = () => {
                     </Typography>
                     <ul style={{ marginTop: "24px" }}>
                       <NavLink to="/home" style={{ textDecoration: "none", color: "#fff" }}>
-                      <li>
-                        <Typography variant="caption">Home</Typography>
-                      </li>
+                        <li>
+                          <Typography variant="caption">Home</Typography>
+                        </li>
                       </NavLink>
                       <NavLink to="/shop" style={{ textDecoration: "none", color: "#fff" }}>
-                      <li>
-                        <Typography variant="caption">Shop</Typography>
-                      </li>
+                        <li>
+                          <Typography variant="caption">Shop</Typography>
+                        </li>
                       </NavLink>
                       <NavLink to="/about" style={{ textDecoration: "none", color: "#fff" }}>
-                      <li>
-                        <Typography variant="caption">About Us</Typography>
-                      </li>
+                        <li>
+                          <Typography variant="caption">About Us</Typography>
+                        </li>
                       </NavLink>
-                      <li>
-                        <Typography variant="caption">Privacy Policy</Typography>
-                      </li>
-                      <li>
-                        <Typography variant="caption">
-                          Terms & conditions
-                        </Typography>
-                      </li>
-                      <li>
-                        <Typography variant="caption">Contact Us</Typography>
-                      </li>
+                      <NavLink to="/privacy-policy" style={{ textDecoration: "none", color: "#fff" }}>
+                        <li>
+                          <Typography variant="caption">Privacy Policy</Typography>
+                        </li>
+                      </NavLink>
+                      <NavLink to="/terms-conditions" style={{ textDecoration: "none", color: "#fff" }}>
+                        <li>
+                          <Typography variant="caption">
+                            Terms & Conditions
+                          </Typography>
+                        </li>
+                      </NavLink>
+                      <NavLink to="/contact" style={{ textDecoration: "none", color: "#fff" }}>
+                        <li>
+                          <Typography variant="caption">Contact Us</Typography>
+                        </li>
+                      </NavLink>
                     </ul>
                   </Box>
                 </Grid>
