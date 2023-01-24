@@ -15,7 +15,7 @@ const Shop = () => {
               <Box>
                 <Typography
                   variant="h5"
-                  sx={{ textAlign: "left", fontWeight: 500, mx: 5, mt: 5 }}
+                  sx={{ textAlign: "left", fontWeight: 500, mt: 5 }}
                 >
                   Featured Product <hr />
                 </Typography>
@@ -33,7 +33,7 @@ const Shop = () => {
             <Box>
               <Typography
                 variant="h5"
-                sx={{ textAlign: "left", fontWeight: 500, mx: 5, mt: 5 }}
+                sx={{ textAlign: "left", fontWeight: 500, mt: 5 }}
               >
                 For You Product <hr />
               </Typography>

@@ -11,14 +11,14 @@ const SectionThree = () => {
           <Box>
             <Typography
               variant="h5"
-              sx={{ textAlign: "left", fontWeight: 500, mx: 5, mt: 5 }}
+              sx={{ textAlign: "left", fontWeight: 500, mt: 5 }}
             >
               For You Product <hr />
             </Typography>
             <Box sx={{ mb: 10 }}>
               <YourProduct />
               <NavLink to="/shop" style={{ textDecoration: "none" }}>
-                <Button variant="contained" sx={{ backgroundColor: "#336699" }}>
+                <Button variant="contained" sx={{ backgroundColor: "#336699", mt: 2 }}>
                   Shop Now
                 </Button>
               </NavLink>

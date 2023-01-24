@@ -1,246 +1,89 @@
-import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Box } from "@mui/system";
+import Box from "@mui/material/Box";
+import Item from "./Item";
 
 export default function YourProduct() {
+
+  const cardData = [
+    {
+      "id": 1,
+      "image": "https://ii1.pepperfry.com/media/catalog/product/c/o/1100x1210/combo-classic-xxxl-bean-bag---foot-stool-with-beans-in-black-colour-by-sattva-combo-classic-xxxl-bea-q5ulln.jpg",
+      "title": "Bean Bag Premium, Leg rest & Cushion Combo",
+      "price": "৳4500"
+    },
+    {
+      "id": 2,
+      "image": "https://5.imimg.com/data5/WE/EG/LZ/SELLER-1756364/polo-t-shirts-500x500.jpg",
+      "title": "Trendy Stylish Men Cotton Round T-Shirt",
+      "price": "৳600"
+    },
+    {
+      "id": 3,
+      "image": "https://ae01.alicdn.com/kf/HTB1KB3_b1GSBuNjSspbq6AiipXae/Top-Quality-brand-mens-casual-Shirts-long-Sleeve-100-Cotton-Men-Shirt-Slim-Fit-solid-Male.jpg",
+      "title": "STYLISH new long sleeve shirt for man",
+      "price": "৳600"
+    },
+    {
+      "id": 4,
+      "image": "https://ae01.alicdn.com/kf/H1f6e60d0eb7e4eb1877e529789cf29d7r/Marvel-Deadpool-3D-Printed-Men-Harajuku-Hoodie-Fashion-Spring-Cool-Children-Sweatshirt-Streetwear-Oversized-Women-Clothes.jpg_640x640.jpg",
+      "title": "Preimum Quality Winter Hoodie For Men",
+      "price": "৳800"
+    },
+    {
+      "id": 3,
+      "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
+      "title": "Premium quality bed",
+      "price": "৳40000"
+    },
+    {
+      "id": 4,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
+      "title": "Premium quality bed",
+      "price": "৳30000"
+    },
+    {
+      "id": 1,
+      "image": "https://hatil.com/sites/default/files/Sweetheart-177_0.jpg",
+      "title": "Premium quality bed",
+      "price": "৳50000"
+    },
+    {
+      "id": 2,
+      "image": "https://i.pinimg.com/originals/2f/4b/d9/2f4bd93e6785c4ffe4223917e8cb5d23.jpg",
+      "title": "Premium quality bed",
+      "price": "৳40000"
+    },
+    {
+      "id": 3,
+      "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
+      "title": "Premium quality bed",
+      "price": "৳20000"
+    },
+    {
+      "id": 4,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
+      "title": "Premium quality bed",
+      "price": "৳30000"
+    },
+    {
+      "id": 3,
+      "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
+      "title": "Premium quality bed",
+      "price": "৳40000"
+    },
+    {
+      "id": 4,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
+      "title": "Premium quality bed",
+      "price": "৳40000"
+    },
+  ]
+  
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", gap: "23px", ml: 5, mb: 5 }}>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://images.express.com/is/image/expressfashion/0039_04350006_0098_f002?cache=on&wid=361&fmt=jpeg&qlt=75,1&resmode=sharp2&op_usm=1,1,5,0&defaultImage=Photo-Coming-Soon"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            1 Set Blazer Solid Color Turndown Collar Long Sleeve Slim Fit
-          </Typography>
-          <Typography variant="body1" color="#f44336">
-            ৳3500
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://static-01.daraz.com.bd/p/53e72a92469dc5f08a5fec41a743e89c.jpg"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            Vintage Denim Jackets Men Slim Fit Casual Mens Jeans Coat
-          </Typography>
-          <Typography variant="body1" color="#f44336">
-            ৳4800
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://image.made-in-china.com/202f0j00OQSfURbIvGgj/Btl106542019new-Models-PU-Leather-Fashion-Lady-Hand-Bags-Shoulder-Women-Handbag.jpg"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            Square Star Sequin Messenger Crossbody Bag for Women
-          </Typography>
-          <Typography variant="body1" color="#f44336">
-            ৳650
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://m.media-amazon.com/images/I/7182N164NRL._AC_UL1500_.jpg"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            LouisWill Gold Brands Men Waterproof Luxury Watch
-          </Typography>
-          <Typography variant="body1" color="#f44336">
-            ৳2500
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://cf.shopee.com.my/file/30ad9cd35e543c42690aafce4ba2c392"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            New Men Boots Leather Military Boots Men Winter
-          </Typography>
-          <Typography variant="body1" color="#f44336">
-            ৳4500
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-luggage-1554348191.png?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            VIP Hard Body Luggage - Quad 8 Wheels Polypropylene Luggage
-          </Typography>
-          <Typography variant="body1" color="#f44336">
-            ৳12000
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://techcrunch.com/wp-content/uploads/2022/02/am_hatsu_top.jpg?w=730&crop=1"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            Custom Gaming Keyboard - Alice Layout 66 Keys
-          </Typography>
-          <Typography variant="body1" color="#f44336">
-            ৳3500
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://assets.reedpopcdn.com/g502x_f9QuuM8.jpeg/BROK/thumbnail/1200x1200/quality/100/g502x_f9QuuM8.jpeg"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <Typography
-            gutterBottom
-            variant="body2"
-            component="div"
-            color="primary"
-          >
-            Gaming T-Wolf V6 Mouse With Multicolor Lighting
-          </Typography>
-          <Typography variant="body1" color="#f44336">
-            ৳1500
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button size="small" variant="contained" sx={{backgroundColor:"#336699"}}>
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
+    <Box sx={{display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "center"}} >
+      {cardData.map(card => (
+          <Item key={card.id} card={card}>
+          </Item>
+        ))}
     </Box>
   );
 }
