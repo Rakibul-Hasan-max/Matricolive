@@ -18,7 +18,7 @@ export default function FProduct() {
     },
     {
       "id": 3,
-      "image": "https://img.ltwebstatic.com/images3_pi/2021/12/20/163996659145088f3b67a6c27b246c50372e1a6510_thumbnail_600x.webp",
+      "image": "https://ae01.alicdn.com/kf/HTB1KB3_b1GSBuNjSspbq6AiipXae/Top-Quality-brand-mens-casual-Shirts-long-Sleeve-100-Cotton-Men-Shirt-Slim-Fit-solid-Male.jpg",
       "title": "STYLISH new long sleeve shirt for man",
       "price": "৳600"
     },
@@ -31,50 +31,50 @@ export default function FProduct() {
     {
       "id": 3,
       "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
-      "title": "Bean Bag",
-      "price": "৳2000"
+      "title": "Premium quality bed",
+      "price": "৳40000"
     },
     {
       "id": 4,
       "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
-      "title": "Bean Bag",
-      "price": "৳6000"
+      "title": "Premium quality bed",
+      "price": "৳30000"
     },
     {
       "id": 1,
       "image": "https://hatil.com/sites/default/files/Sweetheart-177_0.jpg",
-      "title": "Watch",
-      "price": "৳5000"
+      "title": "Premium quality bed",
+      "price": "৳50000"
     },
     {
       "id": 2,
       "image": "https://i.pinimg.com/originals/2f/4b/d9/2f4bd93e6785c4ffe4223917e8cb5d23.jpg",
-      "title": "Furniture",
-      "price": "৳4000"
+      "title": "Premium quality bed",
+      "price": "৳40000"
     },
     {
       "id": 3,
       "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
-      "title": "Bean Bag",
-      "price": "৳2000"
+      "title": "Premium quality bed",
+      "price": "৳20000"
     },
     {
       "id": 4,
       "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
-      "title": "Bean Bag",
-      "price": "৳6000"
+      "title": "Premium quality bed",
+      "price": "৳30000"
     },
     {
       "id": 3,
       "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
-      "title": "Bean Bag",
-      "price": "৳2000"
+      "title": "Premium quality bed",
+      "price": "৳40000"
     },
     {
       "id": 4,
       "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
-      "title": "Bean Bag",
-      "price": "৳6000"
+      "title": "Premium quality bed",
+      "price": "৳40000"
     },
   ]
   
