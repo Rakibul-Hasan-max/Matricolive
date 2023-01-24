@@ -1,14 +1,16 @@
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import { NavLink } from "react-router-dom";
 
-function Item({ item }) {
+function Item({ card }) {
+  // const {image, title, price} = card;
   return (
-    <Card>
+    <Box sx={{ maxWidth: 170 }}>
+      <Card>
     <NavLink to="/details" style={{ textDecoration: "none" }}>
       <CardMedia
         component="img"
-        maxHeight="250"
-        image={item.image}
+        image={card.image}
         alt="green iguana"
       />
       <CardContent sx={{ textAlign: "left" }}>
@@ -18,15 +20,16 @@ function Item({ item }) {
           component="div"
           color="primary"
         >
-          {item.title}
+          {card.title}
         </Typography>
 
         <Typography variant="body2" color="#f44336">
-        {item.price}
+        {card.price}
         </Typography>
       </CardContent>
     </NavLink>
   </Card>
+    </Box>
   );
 }
 

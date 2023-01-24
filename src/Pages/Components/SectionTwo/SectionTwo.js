@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
-import Furniture from "./Furniture";
+import FProduct from "./FProduct";
 
 const SectionTwo = () => {
   return (
@@ -12,11 +12,10 @@ const SectionTwo = () => {
               variant="h5"
               sx={{ textAlign: "left", fontWeight: 500, mt: 5 }}
             >
-              Featured Product <hr/>
+              Featured Product <hr />
             </Typography>
             <Box>
-                {/* <FProduct /> */}
-                <Furniture />
+              <FProduct />
             </Box>
           </Box>
         </Grid>

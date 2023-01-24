@@ -1,155 +1,89 @@
-import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Box } from "@mui/system";
-import { NavLink } from "react-router-dom";
+import Box from "@mui/material/Box";
+import Item from "./Item";
 
 export default function FProduct() {
+
+  const cardData = [
+    {
+      "id": 1,
+      "image": "https://ii1.pepperfry.com/media/catalog/product/c/o/1100x1210/combo-classic-xxxl-bean-bag---foot-stool-with-beans-in-black-colour-by-sattva-combo-classic-xxxl-bea-q5ulln.jpg",
+      "title": "Bean Bag Premium, Leg rest & Cushion Combo",
+      "price": "৳4500"
+    },
+    {
+      "id": 2,
+      "image": "https://5.imimg.com/data5/WE/EG/LZ/SELLER-1756364/polo-t-shirts-500x500.jpg",
+      "title": "Trendy Stylish Men Cotton Round T-Shirt",
+      "price": "৳600"
+    },
+    {
+      "id": 3,
+      "image": "https://img.ltwebstatic.com/images3_pi/2021/12/20/163996659145088f3b67a6c27b246c50372e1a6510_thumbnail_600x.webp",
+      "title": "STYLISH new long sleeve shirt for man",
+      "price": "৳600"
+    },
+    {
+      "id": 4,
+      "image": "https://ae01.alicdn.com/kf/H1f6e60d0eb7e4eb1877e529789cf29d7r/Marvel-Deadpool-3D-Printed-Men-Harajuku-Hoodie-Fashion-Spring-Cool-Children-Sweatshirt-Streetwear-Oversized-Women-Clothes.jpg_640x640.jpg",
+      "title": "Preimum Quality Winter Hoodie For Men",
+      "price": "৳800"
+    },
+    {
+      "id": 3,
+      "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
+      "title": "Bean Bag",
+      "price": "৳2000"
+    },
+    {
+      "id": 4,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
+      "title": "Bean Bag",
+      "price": "৳6000"
+    },
+    {
+      "id": 1,
+      "image": "https://hatil.com/sites/default/files/Sweetheart-177_0.jpg",
+      "title": "Watch",
+      "price": "৳5000"
+    },
+    {
+      "id": 2,
+      "image": "https://i.pinimg.com/originals/2f/4b/d9/2f4bd93e6785c4ffe4223917e8cb5d23.jpg",
+      "title": "Furniture",
+      "price": "৳4000"
+    },
+    {
+      "id": 3,
+      "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
+      "title": "Bean Bag",
+      "price": "৳2000"
+    },
+    {
+      "id": 4,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
+      "title": "Bean Bag",
+      "price": "৳6000"
+    },
+    {
+      "id": 3,
+      "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
+      "title": "Bean Bag",
+      "price": "৳2000"
+    },
+    {
+      "id": 4,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
+      "title": "Bean Bag",
+      "price": "৳6000"
+    },
+  ]
+  
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", gap: "23px", ml: 5, mb: 5 }}>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://ii1.pepperfry.com/media/catalog/product/c/o/1100x1210/combo-classic-xxxl-bean-bag---foot-stool-with-beans-in-black-colour-by-sattva-combo-classic-xxxl-bea-q5ulln.jpg"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <NavLink to="/details" style={{ textDecoration: "none" }}>
-            <Typography
-              gutterBottom
-              variant="body2"
-              component="div"
-              color="primary"
-            >
-              XXL Bean Bag Premium, Leg rest & Cushion Combo Set
-            </Typography>
-          </NavLink>
-          <Typography variant="body1" color="#f44336">
-            ৳4500
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button
-            size="small"
-            variant="contained"
-            sx={{ backgroundColor: "#336699" }}
-          >
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://i.pinimg.com/originals/f4/51/9c/f4519cdb86f8cd96da000e78bade4f08.jpg"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <NavLink to="/details" style={{ textDecoration: "none" }}>
-            <Typography
-              gutterBottom
-              variant="body2"
-              component="div"
-              color="primary"
-            >
-              Trendy Stylish Men Cotton Round Neck Full Sleeve T-Shirt
-            </Typography>
-          </NavLink>
-          <Typography variant="body1" color="#f44336">
-            ৳600
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button
-            size="small"
-            variant="contained"
-            sx={{ backgroundColor: "#336699" }}
-          >
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://images.unsplash.com/photo-1607345366928-199ea26cfe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2hpcnR8ZW58MHx8MHx8&w=1000&q=80"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <NavLink to="/details" style={{ textDecoration: "none" }}>
-            <Typography
-              gutterBottom
-              variant="body2"
-              component="div"
-              color="primary"
-            >
-              STYLISH new fashon long sleeve shirt for man
-            </Typography>
-          </NavLink>
-          <Typography variant="body1" color="#f44336">
-            ৳400
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button
-            size="small"
-            variant="contained"
-            sx={{ backgroundColor: "#336699" }}
-          >
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
-      <Card sx={{ maxWidth: 250 }}>
-        <CardMedia
-          component="img"
-          height="250"
-          image="https://images.unsplash.com/photo-1564557287817-3785e38ec1f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG9vZGllfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-          alt="green iguana"
-        />
-        <CardContent sx={{ textAlign: "left" }}>
-          <NavLink to="/details" style={{ textDecoration: "none" }}>
-            <Typography
-              gutterBottom
-              variant="body2"
-              component="div"
-              color="primary"
-            >
-              Preimum Quality Winter Hoodie For Men
-            </Typography>
-          </NavLink>
-          <Typography variant="body1" color="#f44336">
-            ৳500
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-around" }}>
-          <Button size="small" variant="outlined">
-            Add to cart
-          </Button>
-          <Button
-            size="small"
-            variant="contained"
-            sx={{ backgroundColor: "#336699" }}
-          >
-            Buy Now
-          </Button>
-        </CardActions>
-      </Card>
+    <Box sx={{display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "center"}} >
+      {cardData.map(card => (
+          <Item key={card.id} card={card}>
+          </Item>
+        ))}
     </Box>
   );
 }
