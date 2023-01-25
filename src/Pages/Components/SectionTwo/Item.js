@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function Item({ card }) {
   // const {image, title, price} = card;
   return (
-    <Box sx={{ maxWidth: 170 }}>
+    <Box sx={{ maxWidth: 160 }}>
       <Card>
     <NavLink to="/details" style={{ textDecoration: "none" }}>
       <CardMedia
