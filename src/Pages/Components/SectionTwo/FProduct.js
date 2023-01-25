@@ -79,7 +79,7 @@ export default function FProduct() {
   ]
   
   return (
-    <Box sx={{display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "center"}} >
+    <Box sx={{display: "flex", flexWrap: "wrap", gap: "10px", justifyContent: "center"}} >
       {cardData.map(card => (
           <Item key={card.id} card={card}>
           </Item>
