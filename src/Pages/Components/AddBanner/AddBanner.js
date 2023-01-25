@@ -2,7 +2,7 @@
 const AddBanner = () => {
     return (
         <div>
-            <img style={{ width: "100%", maxHeight: "380px", margin: "30px 0" }} src="https://i.ibb.co/d2W4Vd8/Social-banner2.png" alt="Product Banner" />
+            <img style={{ width: "100%", maxHeight: "400px", marginTop: "50px" }} src="https://i.ibb.co/nj0H91X/b3.jpg" alt="Product Banner" />
         </div>
     );
 };
