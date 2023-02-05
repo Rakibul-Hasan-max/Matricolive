@@ -45,6 +45,7 @@ const Footer = () => {
                     <Link
                       href="https://www.facebook.com/matricolive"
                       color="inherit"
+                      target="_blank"
                     >
                       <Box
                         className="footer-icon"
@@ -60,6 +61,7 @@ const Footer = () => {
                     <Link
                       href="https://www.instagram.com/matricolive/"
                       color="inherit"
+                      target="_blank"
                     >
                       <Box
                         className="footer-icon"
@@ -75,6 +77,7 @@ const Footer = () => {
                     <Link
                       href="https://www.linkedin.com/company/matricolive/"
                       color="inherit"
+                      target="_blank"
                     >
                       <Box
                         className="footer-icon"
@@ -90,6 +93,7 @@ const Footer = () => {
                     <Link
                       href="https://www.youtube.com/@matricolive"
                       color="inherit"
+                      target="_blank"
                     >
                       <Box
                         className="footer-icon"
