@@ -114,9 +114,7 @@ const Footer = () => {
                 variant="body2"
                 sx={{ my: 3, textAlign: "left", fontSize: 12 }}
               >
-                Here we are ready to provide you with the best quality product
-                from our own production. If you need any product, feel free to
-                inbox us with the product code and place your order.
+                Matricolive is a B2B and B2C e-commerce platform. Here we are ready to provide you with the best quality product from our own production and sources.
               </Typography>
               {/* <NavLink to="/home" style={{ textDecoration: "none" }}>
                 <Button

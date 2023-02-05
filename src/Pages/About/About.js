@@ -34,8 +34,46 @@ const About = () => {
             lasting world, and we’re committed to using the power of business to
             strengthen communities and empower people.
           </Typography>
+          <Box>
+            <Typography
+              variant="body2"
+              sx={{ textAlign: "left", mx: "20%", color: "#333333" }}
+            >
+              Matricolive is a B2B and B2C e-commerce platform. Matricolive
+              e-commerce is a company of Metricolive Group of Companies Limited.
+              It was established in 2022.
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ textAlign: "left", mx: "20%", mt: 2, color: "#333333" }}
+            >
+              We are working to improve our sales experience and business
+              quality. We strive to make global products available to customers
+              very easily. We work for the benefit of the customers including
+              improving their quality of life. Our only goal is to provide
+              quality service to our customers.
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ textAlign: "left", mx: "20%", mt: 2, color: "#333333" }}
+            >
+              We have several other sister concerns that are working tirelessly
+              to serve you. "Greenleaf Planner" is one of them. The company
+              provides any kind of event management work. It also provides
+              interior design and development services. Our other partner
+              company is Devcalltech. It provides all kinds of tech-related
+              services. You can get any kind of tech support here.
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ textAlign: "left", mx: "20%", mt: 2, color: "#333333" }}
+            >
+              Apart from this, Matricolive has its own clothing brand known as
+              Matric Olive. Our main goal is to make your life easier.
+            </Typography>
+          </Box>
         </Box>
-        <Box sx={{margin:"100px 0"}}>
+        <Box sx={{ margin: "100px 0" }}>
           <Typography variant="h5">Meet Our Team</Typography>
           <OurTeam />
         </Box>
