@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaYoutube
 } from "react-icons/fa";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import logo2 from "../../../../images/logo2.png";
 import "./Footer.css";
 
@@ -142,38 +142,38 @@ const Footer = () => {
                       Quick Link
                     </Typography>
                     <ul style={{ marginTop: "24px" }}>
-                      <NavLink to="/home" style={{ textDecoration: "none", color: "#fff" }}>
+                      <Link href="/home" style={{ textDecoration: "none", color: "#fff" }}>
                         <li>
                           <Typography variant="caption">Home</Typography>
                         </li>
-                      </NavLink>
-                      <NavLink to="/shop" style={{ textDecoration: "none", color: "#fff" }}>
+                      </Link>
+                      <Link href="/shop" style={{ textDecoration: "none", color: "#fff" }}>
                         <li>
                           <Typography variant="caption">Shop</Typography>
                         </li>
-                      </NavLink>
-                      <NavLink to="/about" style={{ textDecoration: "none", color: "#fff" }}>
+                      </Link>
+                      <Link href="/about" style={{ textDecoration: "none", color: "#fff" }}>
                         <li>
                           <Typography variant="caption">About Us</Typography>
                         </li>
-                      </NavLink>
-                      <NavLink to="/privacy-policy" style={{ textDecoration: "none", color: "#fff" }}>
+                      </Link>
+                      <Link href="/privacy-policy" style={{ textDecoration: "none", color: "#fff" }}>
                         <li>
                           <Typography variant="caption">Privacy Policy</Typography>
                         </li>
-                      </NavLink>
-                      <NavLink to="/terms-conditions" style={{ textDecoration: "none", color: "#fff" }}>
+                      </Link>
+                      <Link href="/terms-conditions" style={{ textDecoration: "none", color: "#fff" }}>
                         <li>
                           <Typography variant="caption">
                             Terms & Conditions
                           </Typography>
                         </li>
-                      </NavLink>
-                      <NavLink to="/contact" style={{ textDecoration: "none", color: "#fff" }}>
+                      </Link>
+                      <Link href="/contact" style={{ textDecoration: "none", color: "#fff" }}>
                         <li>
                           <Typography variant="caption">Contact Us</Typography>
                         </li>
-                      </NavLink>
+                      </Link>
                     </ul>
                   </Box>
                 </Grid>
@@ -184,25 +184,19 @@ const Footer = () => {
                     </Typography>
                     <ul style={{ marginTop: "24px" }}>
                       <li>
-                        <Typography variant="caption">
-                          Content Writer
-                        </Typography>
+                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">Content Writer</Typography></Link>
                       </li>
                       <li>
-                        <Typography variant="caption">Video Editor</Typography>
+                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">Video Editor</Typography></Link>
                       </li>
                       <li>
-                        <Typography variant="caption">
-                          Digital Marketer
-                        </Typography>
+                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">Digital Marketer</Typography></Link>
                       </li>
                       <li>
-                        <Typography variant="caption">
-                          Graphic Designer
-                        </Typography>
+                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">Graphic Designer</Typography></Link>
                       </li>
                       <li>
-                        <Typography variant="caption">IT Expert</Typography>
+                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">IT Expert</Typography></Link>
                       </li>
                     </ul>
                   </Box>
@@ -228,7 +222,7 @@ const Footer = () => {
                         </Typography>
                       </li>
                       <li>
-                        <Typography variant="caption">IT Service</Typography>
+                        <Link href="https://devcalltech.com/" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">IT Service</Typography></Link>
                       </li>
                     </ul>
                   </Box>
