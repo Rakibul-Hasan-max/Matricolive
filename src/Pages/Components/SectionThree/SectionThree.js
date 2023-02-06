@@ -1,6 +1,5 @@
 import { Box, Button, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
-import { NavLink } from "react-router-dom";
 import YourProduct from "./YourProduct";
 
 const SectionThree = () => {
@@ -17,11 +16,9 @@ const SectionThree = () => {
             </Typography>
             <Box sx={{ mb: 10 }}>
               <YourProduct />
-              <NavLink to="/shop" style={{ textDecoration: "none" }}>
-                <Button variant="contained" sx={{ backgroundColor: "#336699", mt: 2 }}>
+                <Button href="/shop" variant="contained" sx={{ backgroundColor: "#336699", mt: 2 }}>
                   Shop Now
                 </Button>
-              </NavLink>
             </Box>
           </Box>
         </Grid>

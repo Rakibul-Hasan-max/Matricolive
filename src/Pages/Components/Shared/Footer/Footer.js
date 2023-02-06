@@ -1,4 +1,4 @@
-import { Container, Grid, Link, Typography } from "@mui/material";
+import { Button, Container, Grid, Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import {
   FaFacebookF,
@@ -114,15 +114,16 @@ const Footer = () => {
               <Typography variant="h6" sx={{ fontSize: 25, textAlign: "left" }}>
                 About Us
               </Typography>
-              <Typography
-                variant="body2"
-                sx={{ my: 3, textAlign: "left", fontSize: 12 }}
-              >
-                Matricolive is a B2B and B2C e-commerce platform. Here we are ready to provide you with the best quality product from our own production and sources.
-              </Typography>
-              {/* <NavLink to="/home" style={{ textDecoration: "none" }}>
+              <Box sx={{ textAlign: "left" }}>
+                <Typography
+                  variant="body2"
+                  sx={{ my: 3,  fontSize: 12 }}
+                >
+                  Matricolive is a B2B and B2C e-commerce platform. Here we are ready to provide you with the best quality product from our own production and sources.
+                </Typography>
                 <Button
                   variant="contained"
+                  href="/about"
                   sx={{
                     background: "#336699 !important",
                     borderRadius: "0 !important",
@@ -132,7 +133,7 @@ const Footer = () => {
                 >
                   More About Us
                 </Button>
-              </NavLink> */}
+              </Box>
             </Grid>
             <Grid item xs={12} md={6} sx={{ color: "#fff" }}>
               <Grid container spacing={3}>
@@ -150,11 +151,6 @@ const Footer = () => {
                       <Link href="/shop" style={{ textDecoration: "none", color: "#fff" }}>
                         <li>
                           <Typography variant="caption">Shop</Typography>
-                        </li>
-                      </Link>
-                      <Link href="/about" style={{ textDecoration: "none", color: "#fff" }}>
-                        <li>
-                          <Typography variant="caption">About Us</Typography>
                         </li>
                       </Link>
                       <Link href="/privacy-policy" style={{ textDecoration: "none", color: "#fff" }}>

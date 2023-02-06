@@ -1,13 +1,13 @@
 import { Grid, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
-import banner from "../../images/Shop.jpg";
+import banner from "../../images/Shop.png";
 import YourProduct from "../Components/SectionThree/YourProduct";
 import FProduct from "../Components/SectionTwo/FProduct";
 
 const Shop = () => {
   return (
     <Box>
-      <img style={{ width: "100%", height: "280px" }} src={banner} alt="" />
+      <img style={{ width: "100%", maxHeight: "350px" }} src={banner} alt="" />
       <Box>
         <Box>
           <Container maxWidth="lg">
