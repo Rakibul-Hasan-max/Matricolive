@@ -2,7 +2,6 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuIcon from "@mui/icons-material/Menu";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import AppBar from "@mui/material/AppBar";
 import Badge from "@mui/material/Badge";
@@ -190,13 +189,14 @@ export default function Navigation() {
             </Typography>
           </NavLink>
           <Search>
-            <SearchIconWrapper>
+            {/* <SearchIconWrapper>
               <SearchIcon />
-            </SearchIconWrapper>
+            </SearchIconWrapper> */}
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Search in Matricolive"
               inputProps={{ "aria-label": "search" }}
             />
+            {/* <Button variant="Contained">Search</Button> */}
           </Search>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
