@@ -97,15 +97,16 @@ export default function Register() {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign Up
+              Register
             </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
+            <Box>
+              <Typography variant="body2">
+                Already have an account?
+                <Link href="login" variant="body2" style={{marginLeft: 10, textDecoration: "none"}}>
+                  Login
                 </Link>
-              </Grid>
-            </Grid>
+              </Typography>
+            </Box>
           </Box>
         </Box>
       </Container>

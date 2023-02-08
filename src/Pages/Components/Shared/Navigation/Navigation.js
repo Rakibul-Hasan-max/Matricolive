@@ -4,6 +4,7 @@ import MoreIcon from "@mui/icons-material/MoreVert";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Link } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Badge from "@mui/material/Badge";
 import Box from "@mui/material/Box";
@@ -101,8 +102,8 @@ export default function Navigation() {
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
       <MenuItem onClick={handleMenuClose}>Dashboard</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Log In</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Register</MenuItem>
+      <Link href="/login" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Log In</MenuItem></Link>
+      <Link href="/register" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Register</MenuItem></Link>
       <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
     </Menu>
   );
