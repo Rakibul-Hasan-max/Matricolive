@@ -162,14 +162,14 @@ export default function Navigation() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "#336699" }}>
+      <AppBar sx={{ backgroundColor: "#336699", position:"fixed", top: 0, width: "100%" }}>
         <Toolbar>
           <IconButton
             size="large"
             edge="start"
             color="inherit"
             aria-label="open drawer"
-            sx={{ mr: 1 }}
+            sx={{ mr: 1, display: { xs: "flex", md: "none" } }}
           >
             <MenuIcon />
           </IconButton>
@@ -185,6 +185,7 @@ export default function Navigation() {
                 letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
+                marginRight: "70px"
               }}
             >
               <img style={{ width: "150px" }} src={logo} alt="" />
@@ -195,6 +196,7 @@ export default function Navigation() {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
+              // sx={{maxWidth: "650px"}}
               placeholder="Search in Matricolive"
               inputProps={{ "aria-label": "search" }}
             />
