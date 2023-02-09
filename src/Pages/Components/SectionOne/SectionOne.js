@@ -10,7 +10,7 @@ const SectionOne = () => {
   return (
     <Box
       sx={{
-        display: "flex",
+        display: { xs: "none", md: "flex" },
         flexWrap: "wrap",
         border: "1px solid #E5B8F4",
         padding: "25px 2px",
@@ -24,12 +24,12 @@ const SectionOne = () => {
       <Box
         sx={{
           paddingRight: "20px",
-          // borderRight: "1px solid #E5B8F4",
+          borderRight: "1px solid #E5B8F4",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           gap: "10px",
-          width: "195px",
+          minWidth: "190px",
         }}
       >
         <LocalShippingIcon sx={{ color: "#336699" }} fontSize="large" />
@@ -43,12 +43,12 @@ const SectionOne = () => {
       <Box
         sx={{
           padding: "0 20px",
-          // borderRight: "1px solid #E5B8F4",
+          borderRight: "1px solid #E5B8F4",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           gap: "10px",
-          width: "195px",
+          minWidth: "190px",
         }}
       >
         <ManageHistoryIcon sx={{ color: "#336699" }} fontSize="large" />
@@ -62,12 +62,12 @@ const SectionOne = () => {
       <Box
         sx={{
           padding: "0 20px",
-          // borderRight: "1px solid #E5B8F4",
+          borderRight: "1px solid #E5B8F4",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           gap: "10px",
-          width: "195px",
+          minWidth: "190px",
         }}
       >
         <PaymentIcon sx={{ color: "#336699" }} fontSize="large" />
@@ -81,12 +81,12 @@ const SectionOne = () => {
       <Box
         sx={{
           padding: "0 20px",
-          // borderRight: "1px solid #E5B8F4",
+          borderRight: "1px solid #E5B8F4",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           gap: "10px",
-          width: "195px",
+          minWidth: "190px",
         }}
       >
         <PermPhoneMsgIcon sx={{ color: "#336699" }} fontSize="large" />
@@ -104,7 +104,7 @@ const SectionOne = () => {
           justifyContent: "center",
           alignItems: "center",
           gap: "10px",
-          width: "195px",
+          minWidth: "190px",
         }}
       >
         <RedeemIcon sx={{ color: "#336699" }} fontSize="large" />

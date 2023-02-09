@@ -6,13 +6,8 @@ function Item({ item }) {
       <img
         src={item.image}
         alt={item.title}
-        style={{ width: "100%", maxHeight: "400px" }}
+        style={{ width: "100%", maxHeight: "500px" }}
       />
-      {/* <NavLink to="/details" style={{ textDecoration: "none" }}>
-        <Button variant="contained" sx={{ marginTop: "-150px" }}>
-          Order Now
-        </Button>
-      </NavLink> */}
     </Box>
   );
 }
