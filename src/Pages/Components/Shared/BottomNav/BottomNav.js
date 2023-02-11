@@ -5,23 +5,22 @@ import ShopIcon from "@mui/icons-material/Shop";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import * as React from "react";
 
 export default function BottomNav() {
-  const [value, setValue] = React.useState("home");
+  // const [value, setValue] = React.useState("home");
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  // const handleChange = (event, newValue) => {
+  //   setValue(newValue);
+  // };
 
   return (
     <BottomNavigation
-      sx={{ width: "100%", display: { xs: "flex", sm: "none" } }}
-      value={value}
-      onChange={handleChange}
+      sx={{ width: "96%", display: { xs: "flex", sm: "none" } }}
+      // value={value}
+      // onChange={handleChange}
     >
-      <BottomNavigationAction label="Home" value="home" icon={<HomeIcon />} />
-      <BottomNavigationAction label="Shop" value="shop" icon={<ShopIcon />} />
+      <BottomNavigationAction href="/home" label="Home" value="home" icon={<HomeIcon />} />
+      <BottomNavigationAction href="/shop" label="Shop" value="shop" icon={<ShopIcon />} />
       <BottomNavigationAction
         label="Category"
         value="category"
@@ -33,6 +32,7 @@ export default function BottomNav() {
         icon={<ShoppingCartIcon />}
       />
       <BottomNavigationAction
+        href="/login"
         label="Account"
         value="account"
         icon={<PersonIcon />}

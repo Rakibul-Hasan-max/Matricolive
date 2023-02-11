@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Dense() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}>
       <AppBar position="static" sx={{ backgroundColor: "#0B3160", pt: {xs: "55px", sm: "60px", md: "65px"} }}>
         <Toolbar variant="dense">
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>

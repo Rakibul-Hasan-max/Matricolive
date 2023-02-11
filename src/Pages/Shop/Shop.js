@@ -9,7 +9,7 @@ const Shop = () => {
   return (
     <Box>
       <Dense />
-      <img style={{ width: "100%", maxHeight: "380px" }} src={banner} alt="" />
+      <Box sx={{pt: {xs: "55px", sm: "0px", md: "0px"}}}><img style={{ width: "100%", maxHeight: "380px" }} src={banner} alt="" /></Box>
       <Box>
         <Box>
           <Container maxWidth="lg">

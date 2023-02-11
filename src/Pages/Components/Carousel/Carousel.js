@@ -4,7 +4,7 @@ import slider from "./slider.json";
 
 function banner() {
   return (
-    <Carousel>
+    <Carousel sx={{ pt: {xs: "55px", sm: "0px", md: "0px"} }}>
       {slider.map((item) => (
         <Item key={item.id} item={item} />
       ))}

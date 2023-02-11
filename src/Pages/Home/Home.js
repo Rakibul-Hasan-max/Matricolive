@@ -6,7 +6,6 @@ import SectionFour from "../Components/SectionFour/SectionFour";
 import SectionOne from "../Components/SectionOne/SectionOne";
 import SectionThree from "../Components/SectionThree/SectionThree";
 import SectionTwo from "../Components/SectionTwo/SectionTwo";
-import BottomNav from "../Components/Shared/BottomNav/BottomNav";
 
 const Home = () => {
   return (
@@ -19,7 +18,6 @@ const Home = () => {
       <SectionThree />
       <BannerThree />
       <SectionFour />
-      <BottomNav />
     </div>
   );
 };
