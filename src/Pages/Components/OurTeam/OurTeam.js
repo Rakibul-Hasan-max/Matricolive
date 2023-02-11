@@ -5,12 +5,12 @@ import Typography from "@mui/material/Typography";
 
 const data = [
   {
-    src: "https://i.ibb.co/grQPFsz/sourov-removebg-preview.png",
+    src: "https://live.staticflickr.com/65535/52682054572_50ec6536e5_w.jpg",
     name: "Foriduzzaman Sourov",
     title: "Founder & CEO",
   },
   {
-    src: "https://i.ibb.co/1MpxYqd/hasan.jpg",
+    src: "https://live.staticflickr.com/65535/52683070533_b530e0f3d9_w.jpg",
     name: "Rakibul Hasan",
     title: "Co-Founder & CTO",
   },

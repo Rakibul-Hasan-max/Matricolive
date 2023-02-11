@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Box>
       <img
-        style={{ width: "100%", maxHeight: "350px" }}
+        style={{ width: "100%", maxHeight: "400px" }}
         src="https://i.ibb.co/Y3kWSZv/pexels-fauxels-3183183.jpg"
         alt=""
       />
