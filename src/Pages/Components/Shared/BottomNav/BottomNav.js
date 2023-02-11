@@ -9,7 +9,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 export default function BottomNav() {
-  const [value, setValue] = React.useState("{}");
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -18,6 +18,7 @@ export default function BottomNav() {
   return (
     <BottomNavigation 
       sx={{ width: "96%", display: { xs: "flex", sm: "none" } }}
+      showLabels
       value={value}
       onChange={handleChange}
     >
