@@ -9,9 +9,9 @@ import { NavLink } from "react-router-dom";
 export default function Dense() {
   return (
     <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}>
-      <AppBar position="static" sx={{ backgroundColor: "#0B3160", pt: {xs: "55px", sm: "60px", md: "65px"} }}>
+      <AppBar position="static" sx={{ backgroundColor: "#336699", pt: {xs: "55px", sm: "60px", md: "65px"} }}>
         <Toolbar variant="dense">
-          <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+          <IconButton href='/category' edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
             <MenuIcon />
             <Typography variant='body1' sx={{fontWeight: 500, marginLeft: 1, marginRight: 5, display: { xs: "none", sm: "flex" },}}>Shop by Department</Typography>
           </IconButton>

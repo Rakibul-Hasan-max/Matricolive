@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 const TermsConditions = () => {
   return (
-    <Box>
+    <Box sx={{ pt: "50px" }}>
       <Typography
         variant="h5"
         sx={{ textAlign: "left", mt: 5, mx: "10%", fontWeight: 500 }}

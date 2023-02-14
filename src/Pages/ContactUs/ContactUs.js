@@ -2,7 +2,7 @@ import { Box, Button, TextField, Typography } from "@mui/material";
 
 const ContactUs = () => {
   return (
-    <Box>
+    <Box sx={{ pt: "50px" }}>
       <Typography variant="h5" sx={{ mt: "80px", fontWeight: 500 }}>
         Get in Touch
       </Typography>

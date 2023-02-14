@@ -1,7 +1,7 @@
 import CategoryIcon from "@mui/icons-material/Category";
 import HomeIcon from "@mui/icons-material/Home";
+import WindowIcon from '@mui/icons-material/Window';
 import PersonIcon from "@mui/icons-material/Person";
-import ShopIcon from "@mui/icons-material/Shop";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
@@ -30,9 +30,8 @@ export default function BottomNavbar() {
           }}
         >
           <BottomNavigationAction href='/home' label="Home" icon={<HomeIcon />} />
-          <BottomNavigationAction href='/shop' label="Shop" icon={<ShopIcon />} />
-          <BottomNavigationAction label="Category" icon={<CategoryIcon />} />
-          <BottomNavigationAction label="Cart" icon={<ShoppingCartIcon />} />
+          <BottomNavigationAction href='/category' label="Category" icon={<WindowIcon />} />
+          <BottomNavigationAction href='/login' label="Cart" icon={<ShoppingCartIcon />} />
           <BottomNavigationAction href='/login' label="Account" icon={<PersonIcon />} />
         </BottomNavigation>
       </Paper>

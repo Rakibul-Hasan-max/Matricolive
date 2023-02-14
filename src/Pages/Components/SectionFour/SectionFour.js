@@ -13,9 +13,9 @@ const SectionFour = () => {
             >
               Delivery Partner <hr />
             </Typography>
-            <Box sx={{ mb: 0}}>
+            <Box>
               <img style={{ width: "150px", margin: "60px 20px", alignItems: "center", justifyContent: "center" }} src="https://steadfast.com.bd/icon/logo.svg" alt="" />
-              <img style={{ width: "150px" }} src="https://redxenergy.com.au/wp-content/uploads/2022/07/Linkedin-Comany-Logo.png" alt="" />
+              <img style={{ width: "150px" }} src="https://i.ibb.co/0hNqsT2/redx.png" alt="" />
             </Box>
           </Box>
         </Grid>

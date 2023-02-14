@@ -4,7 +4,7 @@ import OurTeam from "../Components/OurTeam/OurTeam";
 
 const About = () => {
   return (
-    <Box>
+    <Box sx={{ pt: "50px" }}>
       <img
         style={{ width: "100%", maxHeight: "400px" }}
         src="https://i.ibb.co/Y3kWSZv/pexels-fauxels-3183183.jpg"

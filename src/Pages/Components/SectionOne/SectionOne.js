@@ -10,6 +10,7 @@ const SectionOne = () => {
   return (
     <Box
       sx={{
+        backgroundColor: "#fff",
         display: { xs: "none", md: "flex" },
         flexWrap: "wrap",
         border: "1px solid #E5B8F4",
