@@ -83,9 +83,6 @@ const TermsConditions = () => {
         all types of illegal activities. Your contribution is an asset to us, so
         we promise to always keep you safe from the activities of spammers.
       </Typography>
-      <Typography>
-        
-      </Typography>
     </Box>
   );
 };
