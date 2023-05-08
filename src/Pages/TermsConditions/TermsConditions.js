@@ -79,9 +79,12 @@ const TermsConditions = () => {
         does not encourage any illegal activity.
       </Typography>
       <Typography variant="body2" sx={{ textAlign: "left", mb: 2, mx: "10%" }}>
-        Metricolive always works for your good. So it always protects you from
+        Matricolive always works for your good. So it always protects you from
         all types of illegal activities. Your contribution is an asset to us, so
         we promise to always keep you safe from the activities of spammers.
+      </Typography>
+      <Typography>
+        
       </Typography>
     </Box>
   );
