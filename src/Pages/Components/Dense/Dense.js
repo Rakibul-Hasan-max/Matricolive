@@ -20,14 +20,39 @@ export default function Dense() {
               variant="body1"
               color="inherit"
               component="div"
-              sx={{ marginRight: 3 }}
+              sx={{ marginRight: 4 }}
             >
               Home
             </Typography>
           </NavLink>
           <NavLink to="/shop" style={{ textDecoration: "none", color: "#fff" }}>
-            <Typography variant="body1" color="inherit" component="div">
+            <Typography variant="body1" color="inherit" component="div" sx={{ marginRight: 4 }}>
               Shop
+            </Typography>
+          </NavLink>
+          <NavLink to="/wholesale" style={{ textDecoration: "none", color: "#fff" }}>
+            <Typography variant="body1" color="inherit" component="div" sx={{ marginRight: 4 }}>
+              Wholesale
+            </Typography>
+          </NavLink>
+          <NavLink to="/customer-service" style={{ textDecoration: "none", color: "#fff" }}>
+            <Typography variant="body1" color="inherit" component="div" sx={{ marginRight: 4 }}>
+              Customer Service
+            </Typography>
+          </NavLink>
+          <NavLink to="/sell-products" style={{ textDecoration: "none", color: "#fff" }}>
+            <Typography variant="body1" color="inherit" component="div" sx={{ marginRight: 4 }}>
+              Sell products on Matricolive
+            </Typography>
+          </NavLink>
+          <NavLink to="/become-affiliate" style={{ textDecoration: "none", color: "#fff" }}>
+            <Typography variant="body1" color="inherit" component="div" sx={{ marginRight: 4 }}>
+              Become an Affiliate
+            </Typography>
+          </NavLink>
+          <NavLink to="/manufacturer" style={{ textDecoration: "none", color: "#fff" }}>
+            <Typography variant="body1" color="inherit" component="div" >
+              Connect with the manufacturer
             </Typography>
           </NavLink>
         </Toolbar>
