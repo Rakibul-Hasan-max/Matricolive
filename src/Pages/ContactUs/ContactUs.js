@@ -1,3 +1,6 @@
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import { Box, Button, TextField, Typography } from "@mui/material";
 
 const ContactUs = () => {
@@ -6,8 +9,8 @@ const ContactUs = () => {
       <Typography variant="h5" sx={{ mt: "80px", fontWeight: 500 }}>
         Contact Us
       </Typography>
-      <Box sx={{ display: "flex" }}>
-        <Box sx={{ width: "50%" }}>
+      <Box sx={{ display: "flex", justifyContent: "center"}}>
+        <Box sx={{ minWidth: "50%" }}>
           <Typography variant="h6" sx={{ mt: "80px", fontWeight: 500 }}>
             Send Message
           </Typography>
@@ -46,20 +49,23 @@ const ContactUs = () => {
             <Box></Box>
           </Box>
         </Box>
-        <Box sx={{ width: "50%" }}>
+        <Box sx={{ minWidth: "30%" }}>
           <Typography variant="h6" sx={{ mt: "80px", fontWeight: 500 }}>
             Get in Touch
           </Typography>
-          <Box sx={{ mt: 5 }}>
+          <Box sx={{ mt: 5, backgroundColor: "white", py: 2 }}>
             <Box sx={{ my: 3 }}>
+              <PhoneInTalkIcon/>
               <Typography>PHONE</Typography>
               <Typography>+880 1705-405323</Typography>
             </Box>
             <Box sx={{ my: 3 }}>
+              <EmailIcon/>
               <Typography>EMAIL</Typography>
               <Typography>official@matricolive.com</Typography>
             </Box>
             <Box sx={{ my: 3 }}>
+              <LocationOnIcon/>
               <Typography>ADDRESS</Typography>
               <Typography>Dakshin Khan, Uttara, Dhaka 1230</Typography>
             </Box>
