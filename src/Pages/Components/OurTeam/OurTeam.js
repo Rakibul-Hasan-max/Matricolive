@@ -15,8 +15,8 @@ const data = [
     title: "Co-Founder & CTO",
   },
   {
-    src: "https://live.staticflickr.com/65535/53040348310_a87b9535de_n.jpg",
-    name: "Sirajuddin Siyam",
+    src: "https://live.staticflickr.com/65535/53040079556_08613498db_w.jpg",
+    name: "Sirajul Islam",
     title: "Director",
   },
   {
