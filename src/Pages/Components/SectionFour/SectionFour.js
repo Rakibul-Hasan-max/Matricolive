@@ -1,5 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { Container } from "@mui/system";
+import fast from "../../../images/fast.png";
 
 const SectionFour = () => {
   return (
@@ -14,7 +15,7 @@ const SectionFour = () => {
               Delivery Partner <hr />
             </Typography>
             <Box>
-              <img style={{ width: "150px", margin: "60px 20px", alignItems: "center", justifyContent: "center" }} src="https://steadfast.com.bd/icon/logo.svg" alt="" />
+              <img style={{ width: "150px" }} src={fast} alt="" />
               <img style={{ width: "150px" }} src="https://i.ibb.co/0hNqsT2/redx.png" alt="" />
             </Box>
           </Box>

@@ -76,6 +76,18 @@ export default function YourProduct() {
       "title": "Premium quality bed",
       "price": "৳40000"
     },
+    {
+      "id": 3,
+      "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
+      "title": "Premium quality bed",
+      "price": "৳40000"
+    },
+    {
+      "id": 4,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
+      "title": "Premium quality bed",
+      "price": "৳40000"
+    },
   ]
   
   return (
