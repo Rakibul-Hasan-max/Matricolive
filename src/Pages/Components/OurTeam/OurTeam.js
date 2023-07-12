@@ -10,19 +10,19 @@ const data = [
     title: "Founder & CEO",
   },
   {
-    src: "https://live.staticflickr.com/65535/52683070533_b530e0f3d9_w.jpg",
+    src: "https://live.staticflickr.com/65535/53040338895_995c27c62c_n.jpg",
     name: "Rakibul Hasan",
     title: "Co-Founder & CTO",
   },
   {
-    src: "https://live.staticflickr.com/65535/52591141416_1788a82454_w.jpg",
-    name: "Md Siyam",
-    title: "Graphic Artist & Photographer",
+    src: "https://live.staticflickr.com/65535/53040348310_a87b9535de_n.jpg",
+    name: "Sirajuddin Siyam",
+    title: "Director",
   },
   {
     src: "https://live.staticflickr.com/65535/52591141306_5c10c001a3_w.jpg",
     name: "Shubhro Dev Mohonto",
-    title: "Business Development Officer",
+    title: "Director",
   },
 ];
 
@@ -32,13 +32,13 @@ function Media(props) {
   return (
     <Grid
       container
-      sx={{ alignItem: "center", justifyContent: "center", gap: "20px", mt: 2 }}
+      sx={{ alignItem: "center", justifyContent: "center", gap: "20px", mt: 5 }}
     >
       {(loading ? Array.from(new Array(3)) : data).map((item, index) => (
-        <Box key={index} sx={{ width: 200 }}>
+        <Box key={index} sx={{ width: 280, backgroundColor: "#E4EBFE", py: 3, px: 5, textAlign: "center" }}>
           {item ? (
             <img
-              style={{ width: 200, height: 200 }}
+              style={{ width: 120, height: 120, borderRadius: "50%" }}
               alt={item.name}
               src={item.src}
             />
@@ -47,8 +47,8 @@ function Media(props) {
           )}
 
           {item ? (
-            <Box sx={{ pr: 2 }}>
-              <Typography gutterBottom variant="body2">
+            <Box>
+              <Typography gutterBottom variant="body1" sx={{fontWeight: "500"}} >
                 {item.name}
               </Typography>
               <Typography
