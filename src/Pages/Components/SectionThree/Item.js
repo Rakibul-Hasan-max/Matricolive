@@ -11,6 +11,7 @@ function Item({ card }) {
         component="img"
         image={card.image}
         alt="green iguana"
+        sx={{height: "150px"}}
       />
       <CardContent sx={{ textAlign: "left" }}>
         <Typography
@@ -19,7 +20,7 @@ function Item({ card }) {
           component="div"
           color="primary"
         >
-          {card.title}
+          {card.title.slice(0, 34)}
         </Typography>
 
         <Typography variant="body2" color="#f44336">

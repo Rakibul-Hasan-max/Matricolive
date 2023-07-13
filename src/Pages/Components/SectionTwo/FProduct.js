@@ -31,61 +31,61 @@ export default function FProduct() {
     {
       "id": 3,
       "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳40000"
     },
     {
       "id": 4,
       "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳30000"
     },
     {
       "id": 1,
       "image": "https://hatil.com/sites/default/files/Sweetheart-177_0.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳50000"
     },
     {
       "id": 2,
       "image": "https://i.pinimg.com/originals/2f/4b/d9/2f4bd93e6785c4ffe4223917e8cb5d23.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳40000"
     },
     {
       "id": 3,
       "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳20000"
     },
     {
       "id": 4,
       "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳30000"
     },
     {
       "id": 3,
       "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳40000"
     },
     {
       "id": 4,
       "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳40000"
     },
     {
       "id": 3,
       "image": "https://buildingandinteriors.com/wp-content/uploads/2021/08/e9b86a374ae73f8b0615f999a4c1c46f.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳40000"
     },
     {
       "id": 4,
       "image": "https://5.imimg.com/data5/SELLER/Default/2021/8/ES/CY/SD/39221816/img-20210722-wa0117-1000x1000.jpg",
-      "title": "Premium quality bed",
+      "title": "Premium quality bed with stylish design",
       "price": "৳40000"
     },
   ]
