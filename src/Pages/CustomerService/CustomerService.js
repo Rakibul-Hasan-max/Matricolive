@@ -21,15 +21,14 @@ const CustomerService = () => {
           What would you like help with today? You can quickly take care of most
           things here, or connect with us when needed.
         </Typography>
-        <Box sx={{ my: 5, ml: 3 }}>
+        <Box sx={{ my: 5,  }}>
           <Grid
             container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
             sx={{ gap: 3 }}
           >
             <Grid
-              xs={4}
+              xs={12}
+              md={4}
               sx={{
                 backgroundColor: "white",
                 padding: "30px 20px",
@@ -39,7 +38,8 @@ const CustomerService = () => {
               <Typography>A delivery, order or return</Typography>
             </Grid>
             <Grid
-              xs={4}
+              xs={12}
+              md={4}
               sx={{
                 backgroundColor: "white",
                 padding: "30px 20px",
@@ -51,7 +51,8 @@ const CustomerService = () => {
               </Typography>
             </Grid>
             <Grid
-              xs={4}
+              xs={12}
+              md={4}
               sx={{
                 backgroundColor: "white",
                 padding: "30px 20px",
@@ -61,7 +62,8 @@ const CustomerService = () => {
               <Typography>Accessibility</Typography>
             </Grid>
             <Grid
-              xs={4}
+              xs={12}
+              md={4}
               sx={{
                 backgroundColor: "white",
                 padding: "30px 20px",
@@ -71,7 +73,8 @@ const CustomerService = () => {
               <Typography>Login & password</Typography>
             </Grid>
             <Grid
-              xs={4}
+              xs={12}
+              md={4}
               sx={{
                 backgroundColor: "white",
                 padding: "30px 20px",
@@ -81,7 +84,8 @@ const CustomerService = () => {
               <Typography>Report Something Suspicious</Typography>
             </Grid>
             <Grid
-              xs={4}
+              xs={12}
+              md={4}
               sx={{
                 backgroundColor: "white",
                 padding: "30px 20px",
