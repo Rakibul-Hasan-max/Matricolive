@@ -5,7 +5,7 @@ import { Box } from "@mui/system";
 
 const Newsletter = () => {
   return (
-    <Box sx={{ backgroundColor: "#336699", mt: 5}}>
+    <Box sx={{ backgroundColor: "#336699"}}>
       <Grid
         sx={{
           display: "flex",

@@ -7,10 +7,10 @@ const SectionFour = () => {
     <Box>
       <Container maxWidth="lg">
         <Grid>
-          <Box>
+          <Box sx={{mb:5}}>
             <Typography
               variant="h5"
-              sx={{ textAlign: "left", fontWeight: 500, mx: 5, marginTop: "80px" }}
+              sx={{ textAlign: "left", fontWeight: 500, mt: "80px" }}
             >
               Delivery Partner <hr />
             </Typography>
