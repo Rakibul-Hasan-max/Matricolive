@@ -5,7 +5,7 @@ import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 
 const ContactUs = () => {
   return (
-    <Box sx={{ pt: "50px" }}>
+    <Box sx={{ py: "50px" }}>
       <Typography variant="h5" sx={{ mt: "80px", fontWeight: 500 }}>
         Contact Us
       </Typography>

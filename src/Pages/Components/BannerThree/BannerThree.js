@@ -87,7 +87,7 @@ const ImageMarked = styled("span")(({ theme }) => ({
 
 export default function BannerThree() {
   return (
-    <Box sx={{ display: "flex", flexWrap: "wrap", width: "100%" }}>
+    <Box sx={{ display: { xs: "none", md: "flex" }, flexWrap: "wrap", width: "100%" }}>
       {images.map((image) => (
         <ImageButton
           focusRipple

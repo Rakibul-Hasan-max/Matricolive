@@ -16,7 +16,7 @@ import Paper from "@mui/material/Paper";
 
 export default function Category() {
   return (
-    <Box sx={{paddingTop: "70px"}}>
+    <Box sx={{pt: "100px", pb: "70px"}}>
       <Box>
         <Typography variant="h6">All Categories</Typography>
       </Box>
