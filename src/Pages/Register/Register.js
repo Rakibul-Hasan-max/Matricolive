@@ -22,7 +22,7 @@ export default function Register() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs" sx={{ pt: "50px" }}>
+      <Container component="main" maxWidth="xs" sx={{ py: "50px" }}>
         <CssBaseline />
         <Box
           sx={{
