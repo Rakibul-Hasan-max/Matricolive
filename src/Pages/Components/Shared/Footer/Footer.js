@@ -230,7 +230,10 @@ const Footer = () => {
             <hr />
             <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
               <Typography variant="caption" sx={{ color: "#fff"}}>
-                Copyright © 2023 Matricolive, All rights reserved.
+                {'Copyright © '}
+                {' '}
+                {new Date().getFullYear()} Matricolive, All rights reserved
+                {'.'}
               </Typography>
               <Typography variant="caption" sx={{ color: "#fff"}}>
                 Powered By <Link href="https://devcalltech.com/" style={{ textDecoration: "none" }} target="_blank">Devcalltech</Link>
