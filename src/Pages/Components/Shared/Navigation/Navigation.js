@@ -101,7 +101,7 @@ export default function Navigation() {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Dashboard</MenuItem>
+      <Link href="/dashboard" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Dashboard</MenuItem></Link>
       <Link href="/login" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Log In</MenuItem></Link>
       <Link href="/register" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Register</MenuItem></Link>
       <MenuItem onClick={handleMenuClose}>Logout</MenuItem>

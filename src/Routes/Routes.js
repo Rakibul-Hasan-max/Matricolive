@@ -5,6 +5,7 @@ import BecomeAffiliate from "../Pages/BecomeAffiliate/BecomeAffiliate";
 import Category from "../Pages/Category/Category";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import CustomerService from "../Pages/CustomerService/CustomerService";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 import Details from "../Pages/Details/Details";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
@@ -77,6 +78,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs></ContactUs>
+      },
+      {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>
       },
       {
         path: '/login',
