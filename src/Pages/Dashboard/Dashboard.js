@@ -21,6 +21,7 @@ import Orders from './Orders';
 // import Chart from './Chart';
 import Deposits from './Deposits';
 import { mainListItems, secondaryListItems } from './listItems';
+import HomeIcon from '@mui/icons-material/Home';
 
 const drawerWidth = 240;
 
@@ -104,12 +105,19 @@ export default function Dashboard() {
               variant="h6"
               color="inherit"
               noWrap
-              sx={{ flexGrow: 1 }}
+              sx={{ flexGrow: 1, textAlign: "left" }}
             >
-              Dashboard
+              Matricolive Dashboard
+            </Typography>
+            <Typography
+              component="h1"
+              variant="h6"
+              sx={{ fontSize: 35, paddingRight: 1 }}
+            >
+              <Link href="/home" style={{ textDecoration: "none", color: "white" }} ><HomeIcon/></Link>
             </Typography>
             <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
+              <Badge badgeContent={0} color="secondary">
                 <NotificationsIcon />
               </Badge>
             </IconButton>
