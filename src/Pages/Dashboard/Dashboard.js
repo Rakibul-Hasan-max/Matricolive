@@ -107,7 +107,7 @@ export default function Dashboard() {
               noWrap
               sx={{ flexGrow: 1, textAlign: "left" }}
             >
-              Matricolive Dashboard
+              Dashboard
             </Typography>
             <Typography
               component="h1"
