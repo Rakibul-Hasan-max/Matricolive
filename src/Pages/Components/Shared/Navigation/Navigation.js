@@ -18,6 +18,7 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../../../images/logo.png";
+import { useLocation } from "react-router-dom";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -159,6 +160,9 @@ export default function Navigation() {
       </MenuItem>
     </Menu>
   );
+
+  const location = useLocation();
+  if (!location?.pathname?.includes("login"))
 
   return (
     <Box sx={{ flexGrow: 1 }}>

@@ -73,10 +73,10 @@ const About = () => {
             </Typography>
           </Box>
         </Box>
-        <Box sx={{ margin: "100px 0" }}>
+        {/* <Box sx={{ margin: "100px 0" }}>
           <Typography variant="h5" sx={{fontWeight: "500"}}>Meet Our Team</Typography>
           <OurTeam />
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

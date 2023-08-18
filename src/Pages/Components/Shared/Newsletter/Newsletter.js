@@ -1,9 +1,14 @@
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import { Button, Grid, Input, Typography } from "@mui/material";
+import { useLocation } from "react-router-dom";
 import { Box } from "@mui/system";
 
 const Newsletter = () => {
+
+  const location = useLocation();
+  if (!location?.pathname?.includes("dashboard"))
+
   return (
     <Box sx={{ backgroundColor: "#336699"}}>
       <Grid
