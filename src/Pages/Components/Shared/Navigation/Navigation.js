@@ -162,7 +162,7 @@ export default function Navigation() {
   );
 
   const location = useLocation();
-  if (!location?.pathname?.includes("login"))
+  if (!location?.pathname?.includes("dashboard") && !location?.pathname?.includes("login") && !location?.pathname?.includes("register"))
 
   return (
     <Box sx={{ flexGrow: 1 }}>

@@ -12,7 +12,7 @@ import "./Footer.css";
 
 const Footer = () => {
   const location = useLocation();
-  if (!location?.pathname?.includes("dashboard"))
+  if (!location?.pathname?.includes("dashboard") && !location?.pathname?.includes("login") && !location?.pathname?.includes("register"))
     return (
       <Box
         className="footer"

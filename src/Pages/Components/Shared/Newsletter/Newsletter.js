@@ -7,7 +7,7 @@ import { Box } from "@mui/system";
 const Newsletter = () => {
 
   const location = useLocation();
-  if (!location?.pathname?.includes("dashboard"))
+  if (!location?.pathname?.includes("dashboard") && !location?.pathname?.includes("login") && !location?.pathname?.includes("register"))
 
   return (
     <Box sx={{ backgroundColor: "#336699"}}>
