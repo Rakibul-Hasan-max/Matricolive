@@ -22,11 +22,10 @@ export default function Register() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs" sx={{ py: "50px" }}>
+      <Container component="main" maxWidth="xs" sx={{ py: "60px" }}>
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -35,7 +34,7 @@ export default function Register() {
           <Typography component="h1" variant="h6">
             Create your Matricolive account
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3, backgroundColor: "white", p: 3, borderRadius: 2, filter: "drop-shadow(0 0 0.20rem gray)" }}>
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField

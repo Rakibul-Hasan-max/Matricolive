@@ -21,11 +21,10 @@ export default function Login() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs" sx={{ py: "50px" }}>
+      <Container component="main" maxWidth="xs" sx={{ py: "100px" }}>
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -34,7 +33,7 @@ export default function Login() {
           <Typography component="h1" variant="h6">
             Login
           </Typography>
-          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+          <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1, backgroundColor: "white", p: 3, borderRadius: 2, filter: "drop-shadow(0 0 0.20rem gray)" }}>
             <TextField
               margin="normal"
               required
