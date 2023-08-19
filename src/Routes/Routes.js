@@ -5,6 +5,7 @@ import BecomeAffiliate from "../Pages/BecomeAffiliate/BecomeAffiliate";
 import Category from "../Pages/Category/Category";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import CustomerService from "../Pages/CustomerService/CustomerService";
+import Administrator from "../Pages/Dashboard/Administrator";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Details from "../Pages/Details/Details";
 import Home from "../Pages/Home/Home";
@@ -81,7 +82,17 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>
+        element: <Dashboard></Dashboard>,
+        // children: [
+        //   {
+        //     path: "/administrator",
+        //     element: <Administrator></Administrator>
+        //   },
+        //   // {
+        //   //   path: "/home",
+        //   //   element: <Home></Home>
+        //   // },
+        // ]
       },
       {
         path: '/login',

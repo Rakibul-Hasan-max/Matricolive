@@ -1,12 +1,12 @@
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import CssBaseline from "@mui/material/CssBaseline";
+import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 
 const theme = createTheme();
 
@@ -15,8 +15,8 @@ export default function Register() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      email: data.get('email'),
-      password: data.get('password'),
+      email: data.get("email"),
+      password: data.get("password"),
     });
   };
 
@@ -26,15 +26,18 @@ export default function Register() {
         <CssBaseline />
         <Box
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+            alignItems: "center",
+            mt: 3,
+            backgroundColor: "white",
+            p: 3,
+            borderRadius: 2,
+            filter: "drop-shadow(0 0 0.20rem gray)",
           }}
         >
-          <Typography component="h1" variant="h6">
+          <Typography component="h1" variant="h6" sx={{ pb: 2 }}>
             Create your Matricolive account
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3, backgroundColor: "white", p: 3, borderRadius: 2, filter: "drop-shadow(0 0 0.20rem gray)" }}>
+          <Box component="form" noValidate onSubmit={handleSubmit}>
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
@@ -91,7 +94,11 @@ export default function Register() {
             <Box>
               <Typography variant="body2">
                 Already have an account?
-                <Link href="login" variant="body2" style={{marginLeft: 10, textDecoration: "none"}}>
+                <Link
+                  href="login"
+                  variant="body2"
+                  style={{ marginLeft: 10, textDecoration: "none" }}
+                >
                   Login
                 </Link>
               </Typography>
