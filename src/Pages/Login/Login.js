@@ -6,10 +6,14 @@ import Link from "@mui/material/Link";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
+import { useContext } from "react";
+import { AuthContext } from "../../contexts/AuthProvider";
 
 const theme = createTheme();
 
 export default function Login() {
+  const {signIn} = useContext(AuthContext);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -17,6 +21,11 @@ export default function Login() {
       email: data.get("email"),
       password: data.get("password"),
     });
+    signIn("email", "password")
+    .then(result => {
+      const user = result.user;
+      console.log(user);
+    })
   };
 
   return (
@@ -44,6 +53,7 @@ export default function Login() {
               id="email"
               label="Email Address"
               name="email"
+              type="email"
               autoComplete="email"
               autoFocus
             />

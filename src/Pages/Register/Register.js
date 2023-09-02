@@ -15,8 +15,10 @@ export default function Register() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
+      fullName: data.get("fullName"),
       email: data.get("email"),
-      password: data.get("password"),
+      phone: data.get("phone"),
+      password: data.get("password")
     });
   };
 
@@ -58,6 +60,18 @@ export default function Register() {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  type="email"
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  required
+                  fullWidth
+                  id="phone"
+                  label="Phone"
+                  name="phone"
+                  autoComplete="phone"
+                  type="number"
                 />
               </Grid>
               <Grid item xs={12}>
