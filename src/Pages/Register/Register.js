@@ -12,9 +12,15 @@ import { useForm } from 'react-hook-form';
 const Register = () => {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const { createUser } = useContext(AuthContext);
 
   const onSubmit = data => {
     console.log(data)
+    createUser(data.email, data.password)
+    .then(result => {
+      const loggedUser = result.user;
+      console.log(loggedUser);
+    })
   };
 
   return (

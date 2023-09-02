@@ -19,6 +19,8 @@ import * as React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../../../images/logo.png";
 import { useLocation } from "react-router-dom";
+import { AuthContext } from "../../../../contexts/AuthProvider";
+import { useContext } from "react";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -84,6 +86,14 @@ export default function Navigation() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+  const {user, logOut} = useContext(AuthContext);
+
+  const handleLogOut = () =>{
+    logOut()
+      .then(() => {})
+      .catch(error => console.log(error));
+  }
+
   const menuId = "primary-search-account-menu";
   const renderMenu = (
     <Menu
@@ -103,9 +113,13 @@ export default function Navigation() {
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
       <Link href="/dashboard" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Dashboard</MenuItem></Link>
-      <Link href="/login" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Log In</MenuItem></Link>
-      <Link href="/register" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Register</MenuItem></Link>
-      <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
+      {
+        user ? <>
+          <MenuItem onClick={handleLogOut}>Logout</MenuItem>
+        </> : <>
+          <Link href="/login" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Log In</MenuItem></Link>
+        </>
+      }
     </Menu>
   );
 
