@@ -1,31 +1,33 @@
+import React, { useContext } from 'react';
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
-import CssBaseline from "@mui/material/CssBaseline";
-import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
+import { AuthContext } from "../../contexts/AuthProvider";
+import { Grid } from '@mui/material';
 
-const theme = createTheme();
+const Register = () => {
 
-export default function Register() {
+  const { signIn } = useContext(AuthContext);
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      fullName: data.get("fullName"),
-      email: data.get("email"),
-      phone: data.get("phone"),
-      password: data.get("password")
-    });
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+    signIn(email, password)
+      .then(result => {
+          const user = result.user;
+          console.log(user);
+      })
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <Box>
       <Container component="main" maxWidth="xs" sx={{ py: "60px" }}>
-        <CssBaseline />
         <Box
           sx={{
             alignItems: "center",
@@ -39,7 +41,7 @@ export default function Register() {
           <Typography component="h1" variant="h6" sx={{ pb: 2 }}>
             Create your Matricolive account
           </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit}>
+          <Box component="form" onSubmit={handleSubmit}>
             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <TextField
@@ -120,6 +122,8 @@ export default function Register() {
           </Box>
         </Box>
       </Container>
-    </ThemeProvider>
+    </Box>
   );
-}
+};
+
+export default Register;
