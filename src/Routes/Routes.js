@@ -12,6 +12,7 @@ import Login from "../Pages/Login/Login";
 import Manufacturer from "../Pages/Manufacturer/Manufacturer";
 import NotFound from "../Pages/NotFound/NotFound";
 import PrivacyPolicy from "../Pages/PrivacyPolicy/PrivacyPolicy";
+import Profile from "../Pages/Profile/Profile";
 import Register from "../Pages/Register/Register";
 import SellProducts from "../Pages/SellProducts/SellProducts";
 import Shop from "../Pages/Shop/Shop";
@@ -93,6 +94,10 @@ const router = createBrowserRouter([
         //   //   element: <Home></Home>
         //   // },
         // ]
+      },
+      {
+        path: '/profile',
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
       },
       {
         path: '/login',

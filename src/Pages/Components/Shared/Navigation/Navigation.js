@@ -111,7 +111,7 @@ export default function Navigation() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <Link href="/profile" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Profile</MenuItem></Link>
       <Link href="/dashboard" style={{ textDecoration: "none", color: "black" }}><MenuItem onClick={handleMenuClose}>Dashboard</MenuItem></Link>
       {
         user ? <>
