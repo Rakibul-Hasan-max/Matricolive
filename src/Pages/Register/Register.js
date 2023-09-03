@@ -8,11 +8,14 @@ import Typography from "@mui/material/Typography";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { Grid } from '@mui/material';
 import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
 
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const { createUser } = useContext(AuthContext);
+  const { register, handleSubmit, reset, formState: { errors } } = useForm();
+  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const onSubmit = data => {
     console.log(data)
@@ -20,6 +23,20 @@ const Register = () => {
     .then(result => {
       const loggedUser = result.user;
       console.log(loggedUser);
+      updateUserProfile(data.name)
+      .then(() => {
+        console.log("Account created successfully")
+        reset()
+        Swal.fire({
+          position: "center",
+          icon: 'success',
+          title: 'Account created successfully',
+          showConfirmButton: false,
+          timer: 1500
+        });
+        navigate('/');
+      })
+      .catch(error => console.log(error))
     })
   };
 

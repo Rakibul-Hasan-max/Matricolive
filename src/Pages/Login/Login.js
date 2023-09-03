@@ -7,6 +7,7 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { useLocation, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const Login = () => {
 
@@ -26,6 +27,13 @@ const Login = () => {
       .then(result => {
           const user = result.user;
           console.log(user);
+          Swal.fire({
+            position: "center",
+            icon: 'success',
+            title: 'LogIn successfully',
+            showConfirmButton: false,
+            timer: 1500
+          });
           navigate(from, { replace: true });
       })
   };
