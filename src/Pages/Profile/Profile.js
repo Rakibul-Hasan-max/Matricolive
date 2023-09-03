@@ -7,7 +7,7 @@ const Profile = () => {
     // const {user} = useContext(AuthContext);
 
     return (
-        <Box sx={{m: "200px"}}>
+        <Box sx={{my: "200px"}}>
             <Typography>Currently this page is under Maintenance. We will be get back very soon.</Typography>
             {/* <Typography variant="body1">{user?.displayName}</Typography> */}
         </Box>

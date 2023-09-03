@@ -1,12 +1,10 @@
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import image from '../../images/coming-soon.jpg';
 
 const Details = () => {
   return (
     <Box>
       <Box sx={{mt: 5}}>
-        <img src={image} alt="" style={{ width: "100%", maxHeight: "100%" }} />
         <Typography variant="body1">Product details coming soon...</Typography>
       </Box>
       <Box sx={{ textAlign: "left", mx: "10%", my: 5}}>
