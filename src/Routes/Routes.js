@@ -5,7 +5,6 @@ import BecomeAffiliate from "../Pages/BecomeAffiliate/BecomeAffiliate";
 import Category from "../Pages/Category/Category";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import CustomerService from "../Pages/CustomerService/CustomerService";
-import Administrator from "../Pages/Dashboard/Administrator";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Details from "../Pages/Details/Details";
 import Home from "../Pages/Home/Home";
@@ -18,6 +17,7 @@ import SellProducts from "../Pages/SellProducts/SellProducts";
 import Shop from "../Pages/Shop/Shop";
 import TermsConditions from "../Pages/TermsConditions/TermsConditions";
 import Wholesale from "../Pages/Wholesale/Wholesale";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -82,7 +82,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/dashboard',
-        element: <Dashboard></Dashboard>,
+        element: <PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
         // children: [
         //   {
         //     path: "/administrator",
