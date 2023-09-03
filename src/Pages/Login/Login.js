@@ -11,10 +11,14 @@ import Swal from 'sweetalert2';
 
 const Login = () => {
 
-  const { signIn } = useContext(AuthContext);
+  const { signIn, loading } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-
+  
+  if(loading){
+    return <progress></progress>
+  }
+  
   const from = location.state?.from?.pathname || "/";
 
   const handleSubmit = (event) => {

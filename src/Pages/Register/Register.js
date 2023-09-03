@@ -14,8 +14,12 @@ import { useNavigate } from "react-router-dom";
 const Register = () => {
 
   const { register, handleSubmit, reset, formState: { errors } } = useForm();
-  const { createUser, updateUserProfile } = useContext(AuthContext);
+  const { createUser, updateUserProfile, loading } = useContext(AuthContext);
   const navigate = useNavigate();
+
+  if(loading){
+    return <progress></progress>
+  }
 
   const onSubmit = data => {
     console.log(data)
