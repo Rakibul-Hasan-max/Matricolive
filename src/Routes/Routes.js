@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import About from "../Pages/About/About";
 import BecomeAffiliate from "../Pages/BecomeAffiliate/BecomeAffiliate";
+import Cart from "../Pages/Cart/Cart";
 import Category from "../Pages/Category/Category";
 import ContactUs from "../Pages/ContactUs/ContactUs";
 import CustomerService from "../Pages/CustomerService/CustomerService";
@@ -98,6 +99,10 @@ const router = createBrowserRouter([
       {
         path: '/profile',
         element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
+        path: '/cart',
+        element: <PrivateRoute><Cart></Cart></PrivateRoute>
       },
       {
         path: '/login',

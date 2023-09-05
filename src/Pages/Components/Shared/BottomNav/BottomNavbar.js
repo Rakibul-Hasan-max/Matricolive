@@ -31,8 +31,8 @@ export default function BottomNavbar() {
         >
           <BottomNavigationAction href='/home' label="Home" icon={<HomeIcon />} />
           <BottomNavigationAction href='/category' label="Category" icon={<WindowIcon />} />
-          <BottomNavigationAction href='/login' label="Cart" icon={<ShoppingCartIcon />} />
-          <BottomNavigationAction href='/login' label="Account" icon={<PersonIcon />} />
+          <BottomNavigationAction href='/cart' label="Cart" icon={<ShoppingCartIcon />} />
+          <BottomNavigationAction href='/profile' label="Account" icon={<PersonIcon />} />
         </BottomNavigation>
       </Paper>
     </Box>

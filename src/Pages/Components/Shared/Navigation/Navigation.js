@@ -152,14 +152,16 @@ export default function Navigation() {
         </IconButton>
         <p>Notifications</p>
       </MenuItem>
-      <MenuItem>
-        <IconButton size="large" aria-label="show 0 new cart" color="inherit">
-          <Badge badgeContent={0} color="error">
-            <ShoppingCartIcon />
-          </Badge>
-        </IconButton>
-        <p>Cart</p>
-      </MenuItem>
+      <Link href="/cart" style={{ textDecoration: "none", color: "black" }}>
+        <MenuItem>
+          <IconButton size="large" aria-label="show 0 new cart" color="inherit">
+            <Badge badgeContent={0} color="error">
+              <ShoppingCartIcon />
+            </Badge>
+          </IconButton>
+          <p>Cart</p>
+        </MenuItem>
+      </Link>
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
           size="large"
@@ -230,15 +232,17 @@ export default function Navigation() {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <IconButton
-              size="large"
-              aria-label="show 0 new cart"
-              color="inherit"
-            >
-              <Badge badgeContent={0} color="error">
-                <ShoppingCartIcon />
-              </Badge>
-            </IconButton>
+            <Link href="/cart" style={{ textDecoration: "none", color: "white" }}>
+              <IconButton
+                size="large"
+                aria-label="show 0 new cart"
+                color="inherit"
+              >
+                <Badge badgeContent={0} color="error">
+                  <ShoppingCartIcon />
+                </Badge>
+              </IconButton>
+            </Link>
             <IconButton
               size="large"
               edge="end"
