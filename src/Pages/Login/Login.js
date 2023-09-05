@@ -8,6 +8,7 @@ import Typography from "@mui/material/Typography";
 import { AuthContext } from "../../contexts/AuthProvider";
 import { useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import logo from "../../images/blue.png";
 
 const Login = () => {
 
@@ -45,7 +46,14 @@ const Login = () => {
   return (
     <Box>
       <Container component="main" maxWidth="xs" sx={{ py: "100px" }}>
-         <Box
+        <Link href="/" style={{ textDecoration: "none" }}>
+          <img
+            style={{ width: "100%", height: "auto", padding: "10px 80px" }}
+            src={logo}
+            alt="logo"
+          />
+        </Link>
+        <Box
           sx={{
             alignItems: "center",
             mt: 1,
@@ -56,7 +64,7 @@ const Login = () => {
           }}
         >
           <Typography component="h1" variant="h6">
-            Login
+            Welcome to Login
           </Typography>
           <Box component="form" onSubmit={handleSubmit}>
             <TextField

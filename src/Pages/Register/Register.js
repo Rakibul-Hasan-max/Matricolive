@@ -10,6 +10,7 @@ import { Grid } from '@mui/material';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom";
+import logo from "../../images/blue.png";
 
 const Register = () => {
 
@@ -46,11 +47,18 @@ const Register = () => {
 
   return (
     <Box>
-      <Container component="main" maxWidth="xs" sx={{ py: "60px" }}>
+      <Container component="main" maxWidth="xs" sx={{ py: "50px" }}>
+        <Link href="/" style={{ textDecoration: "none" }}>
+          <img
+            style={{ width: "100%", height: "auto", padding: "10px 80px" }}
+            src={logo}
+            alt="logo"
+          />
+        </Link>
         <Box
           sx={{
             alignItems: "center",
-            mt: 3,
+            mt: 1,
             backgroundColor: "white",
             p: 3,
             borderRadius: 2,
