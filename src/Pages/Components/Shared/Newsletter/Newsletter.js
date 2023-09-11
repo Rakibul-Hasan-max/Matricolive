@@ -3,11 +3,16 @@ import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import { Button, Grid, Input, Typography } from "@mui/material";
 import { useLocation } from "react-router-dom";
 import { Box } from "@mui/system";
+import Swal from "sweetalert2";
 
 const Newsletter = () => {
 
   const location = useLocation();
   if (!location?.pathname?.includes("dashboard") && !location?.pathname?.includes("login") && !location?.pathname?.includes("register"))
+
+  var handleClick = () => {
+    alert('Your Subscription is Successful!')
+  }
 
   return (
     <Box sx={{ backgroundColor: "#336699"}}>
@@ -67,6 +72,7 @@ const Newsletter = () => {
             }}
           />
           <Button
+            onClick={handleClick}
             variant="contained"
             sx={{
               backgroundColor: "#333333",
