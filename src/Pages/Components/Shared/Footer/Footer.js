@@ -4,7 +4,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
-  FaYoutube
+  FaYoutube,
 } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 import logo2 from "../../../../images/logo2.png";
@@ -12,7 +12,11 @@ import "./Footer.css";
 
 const Footer = () => {
   const location = useLocation();
-  if (!location?.pathname?.includes("dashboard") && !location?.pathname?.includes("login") && !location?.pathname?.includes("register"))
+  if (
+    !location?.pathname?.includes("dashboard") &&
+    !location?.pathname?.includes("login") &&
+    !location?.pathname?.includes("register")
+  )
     return (
       <Box
         className="footer"
@@ -34,7 +38,7 @@ const Footer = () => {
                     alt="logo"
                   />
                 </Box>
-                <Box sx={{mt: 4}}>
+                <Box sx={{ mt: 4 }}>
                   <Typography
                     variant="body2"
                     sx={{ color: "#fff", textAlign: "left" }}
@@ -47,14 +51,7 @@ const Footer = () => {
                       color="inherit"
                       target="_blank"
                     >
-                      <Box
-                        className="footer-icon"
-                        sx={{
-                          marginRight: 1,
-                          border: "1px solid gray",
-                          padding: "3px 5px",
-                        }}
-                      >
+                      <Box className="footer-icon">
                         <FaFacebookF />
                       </Box>
                     </Link>
@@ -63,14 +60,7 @@ const Footer = () => {
                       color="inherit"
                       target="_blank"
                     >
-                      <Box
-                        className="footer-icon"
-                        sx={{
-                          marginRight: 1,
-                          border: "1px solid gray",
-                          padding: "3px 5px",
-                        }}
-                      >
+                      <Box className="footer-icon">
                         <FaInstagram />
                       </Box>
                     </Link>
@@ -79,14 +69,7 @@ const Footer = () => {
                       color="inherit"
                       target="_blank"
                     >
-                      <Box
-                        className="footer-icon"
-                        sx={{
-                          marginRight: 1,
-                          border: "1px solid gray",
-                          padding: "3px 5px",
-                        }}
-                      >
+                      <Box className="footer-icon">
                         <FaLinkedin />
                       </Box>
                     </Link>
@@ -95,14 +78,7 @@ const Footer = () => {
                       color="inherit"
                       target="_blank"
                     >
-                      <Box
-                        className="footer-icon"
-                        sx={{
-                          marginRight: 1,
-                          border: "1px solid gray",
-                          padding: "3px 5px",
-                        }}
-                      >
+                      <Box className="footer-icon">
                         <FaYoutube />
                       </Box>
                     </Link>
@@ -115,11 +91,10 @@ const Footer = () => {
                 About Us
               </Typography>
               <Box sx={{ textAlign: "left" }}>
-                <Typography
-                  variant="body2"
-                  sx={{ my: 3,  fontSize: 12 }}
-                >
-                  Matricolive is a B2B and B2C e-commerce platform. Here we are ready to provide you with the best quality product from our own production and sources.
+                <Typography variant="body2" sx={{ my: 3, fontSize: 12 }}>
+                  Matricolive is a B2B and B2C e-commerce platform. Here we are
+                  ready to provide you with the best quality product from our
+                  own production and sources.
                 </Typography>
                 <Button
                   variant="contained"
@@ -143,29 +118,46 @@ const Footer = () => {
                       Quick Link
                     </Typography>
                     <ul style={{ marginTop: "24px" }}>
-                      <Link href="/home" style={{ textDecoration: "none", color: "#fff" }}>
+                      <Link
+                        href="/home"
+                        style={{ textDecoration: "none", color: "#fff" }}
+                      >
                         <li>
                           <Typography variant="caption">Home</Typography>
                         </li>
                       </Link>
-                      <Link href="/shop" style={{ textDecoration: "none", color: "#fff" }}>
+                      <Link
+                        href="/shop"
+                        style={{ textDecoration: "none", color: "#fff" }}
+                      >
                         <li>
                           <Typography variant="caption">Shop</Typography>
                         </li>
                       </Link>
-                      <Link href="/privacy-policy" style={{ textDecoration: "none", color: "#fff" }}>
+                      <Link
+                        href="/privacy-policy"
+                        style={{ textDecoration: "none", color: "#fff" }}
+                      >
                         <li>
-                          <Typography variant="caption">Privacy Policy</Typography>
+                          <Typography variant="caption">
+                            Privacy Policy
+                          </Typography>
                         </li>
                       </Link>
-                      <Link href="/terms-conditions" style={{ textDecoration: "none", color: "#fff" }}>
+                      <Link
+                        href="/terms-conditions"
+                        style={{ textDecoration: "none", color: "#fff" }}
+                      >
                         <li>
                           <Typography variant="caption">
                             Terms & Conditions
                           </Typography>
                         </li>
                       </Link>
-                      <Link href="/contact" style={{ textDecoration: "none", color: "#fff" }}>
+                      <Link
+                        href="/contact"
+                        style={{ textDecoration: "none", color: "#fff" }}
+                      >
                         <li>
                           <Typography variant="caption">Contact Us</Typography>
                         </li>
@@ -180,19 +172,57 @@ const Footer = () => {
                     </Typography>
                     <ul style={{ marginTop: "24px" }}>
                       <li>
-                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">Content Writer</Typography></Link>
+                        <Link
+                          href="https://forms.gle/Gk1PP1VYCWNUqbWq8"
+                          style={{ textDecoration: "none", color: "#fff" }}
+                          target="_blank"
+                        >
+                          <Typography variant="caption">
+                            Content Writer
+                          </Typography>
+                        </Link>
                       </li>
                       <li>
-                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">Video Editor</Typography></Link>
+                        <Link
+                          href="https://forms.gle/Gk1PP1VYCWNUqbWq8"
+                          style={{ textDecoration: "none", color: "#fff" }}
+                          target="_blank"
+                        >
+                          <Typography variant="caption">
+                            Video Editor
+                          </Typography>
+                        </Link>
                       </li>
                       <li>
-                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">Digital Marketer</Typography></Link>
+                        <Link
+                          href="https://forms.gle/Gk1PP1VYCWNUqbWq8"
+                          style={{ textDecoration: "none", color: "#fff" }}
+                          target="_blank"
+                        >
+                          <Typography variant="caption">
+                            Digital Marketer
+                          </Typography>
+                        </Link>
                       </li>
                       <li>
-                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">Graphic Designer</Typography></Link>
+                        <Link
+                          href="https://forms.gle/Gk1PP1VYCWNUqbWq8"
+                          style={{ textDecoration: "none", color: "#fff" }}
+                          target="_blank"
+                        >
+                          <Typography variant="caption">
+                            Graphic Designer
+                          </Typography>
+                        </Link>
                       </li>
                       <li>
-                        <Link href="https://forms.gle/Gk1PP1VYCWNUqbWq8" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">IT Expert</Typography></Link>
+                        <Link
+                          href="https://forms.gle/Gk1PP1VYCWNUqbWq8"
+                          style={{ textDecoration: "none", color: "#fff" }}
+                          target="_blank"
+                        >
+                          <Typography variant="caption">IT Expert</Typography>
+                        </Link>
                       </li>
                     </ul>
                   </Box>
@@ -218,7 +248,13 @@ const Footer = () => {
                         </Typography>
                       </li>
                       <li>
-                        <Link href="https://devcalltech.com/" style={{ textDecoration: "none", color: "#fff" }} target="_blank"><Typography variant="caption">IT Service</Typography></Link>
+                        <Link
+                          href="https://devcalltech.com/"
+                          style={{ textDecoration: "none", color: "#fff" }}
+                          target="_blank"
+                        >
+                          <Typography variant="caption">IT Service</Typography>
+                        </Link>
                       </li>
                     </ul>
                   </Box>
@@ -228,15 +264,27 @@ const Footer = () => {
           </Grid>
           <Box sx={{ mt: 5, textAlign: "left" }}>
             <hr />
-            <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
-              <Typography variant="caption" sx={{ color: "#fff"}}>
-                {'Copyright © '}
-                {' '}
-                {new Date().getFullYear()} Matricolive, All rights reserved
-                {'.'}
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-between",
+              }}
+            >
+              <Typography variant="caption" sx={{ color: "#fff" }}>
+                {"Copyright © "} {new Date().getFullYear()} Matricolive, All
+                rights reserved
+                {"."}
               </Typography>
-              <Typography variant="caption" sx={{ color: "#fff"}}>
-                Powered By <Link href="https://devcalltech.com/" style={{ textDecoration: "none" }} target="_blank">Devcalltech</Link>
+              <Typography variant="caption" sx={{ color: "#fff" }}>
+                Powered By{" "}
+                <Link
+                  href="https://devcalltech.com/"
+                  style={{ textDecoration: "none" }}
+                  target="_blank"
+                >
+                  Devcalltech
+                </Link>
               </Typography>
             </Box>
           </Box>

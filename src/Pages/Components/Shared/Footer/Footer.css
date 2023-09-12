@@ -1,3 +1,20 @@
 .footer {
   padding: 50px;
 }
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(71, 71, 71);
+  height: 40px;
+  width: 40px;
+  margin-right: 10px !important;
+  transition: 0.2s ease-out;
+}
+
+.footer-icon:hover {
+  background: #336699;
+  border: 1px solid #336699;
+  transition: 0.4s ease-in;
+}
