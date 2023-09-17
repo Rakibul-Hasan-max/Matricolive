@@ -38,7 +38,7 @@ export default function Cat() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+        {["Men's Fashion", "Women's Fashion", "Watches, Bags, Jewellery", "Health & Beauty", "Electronic Gadgets", "Home & Lifestyle"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
@@ -51,7 +51,7 @@ export default function Cat() {
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
+        {["Babies & Toys", "Electronic Devices", "Electronic Accessories", "Furniture", "Foods & Beverages", "Export Item"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
