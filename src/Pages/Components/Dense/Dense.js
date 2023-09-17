@@ -1,19 +1,22 @@
-import MenuIcon from '@mui/icons-material/Menu';
+
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import IconButton from '@mui/material/IconButton';
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { NavLink } from "react-router-dom";
+import Cat from "./Cat"
 
 export default function Dense() {
   return (
     <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" } }}>
       <AppBar position="static" sx={{ backgroundColor: "#336699", pt: {xs: "55px", sm: "60px", md: "65px"} }}>
         <Toolbar variant="dense">
-          <IconButton href='/category' edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <MenuIcon />
-            <Typography variant='body1' sx={{fontWeight: 500, marginLeft: 1, marginRight: 5, display: { xs: "none", sm: "flex" },}}>Shop by Department</Typography>
+          <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+            <Cat />
+            {/* href='/category'  */}
+            {/* <MenuIcon />
+            <Typography variant='body1' sx={{fontWeight: 500, marginLeft: 1, marginRight: 5, display: { xs: "none", sm: "flex" },}}>Shop by Department</Typography> */}
           </IconButton>
           <NavLink to="/home" style={{ textDecoration: "none", color: "#fff" }}>
             <Typography
